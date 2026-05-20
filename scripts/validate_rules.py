@@ -6,6 +6,9 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 DANGEROUS = ("drop ", "delete ", "update ", "insert ", "truncate ", "xp_cmdshell", "reverse shell")
+SEVERITIES = {"info", "low", "medium", "high", "critical"}
+METHODS = {"GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS", "HEAD"}
+MATCH_TYPES = {"BodyContains", "BodyRegex", "TimeBased", "StatusCode", "HeaderContains"}
 
 
 def load_yaml(path: Path):
@@ -44,10 +47,27 @@ def validate_payload_safety() -> None:
                 raise SystemExit(f"dangerous payload token in {path}")
 
 
+def validate_temu_rule_shape() -> None:
+    for folder in ("vulnerability", "network"):
+        for path in (ROOT / folder).rglob("*.yaml"):
+            data = load_yaml(path) or {}
+            severity = data.get("severity")
+            if severity not in SEVERITIES:
+                raise SystemExit(f"invalid severity in {path}: {severity}")
+            method = data.get("request_method")
+            if method not in METHODS:
+                raise SystemExit(f"invalid request_method in {path}: {method}")
+            verify = data.get("verify") or {}
+            match_type = verify.get("match_type")
+            if match_type not in MATCH_TYPES:
+                raise SystemExit(f"invalid verify.match_type in {path}: {match_type}")
+
+
 def main() -> None:
     validate_manifest()
     validate_yaml_files()
     validate_payload_safety()
+    validate_temu_rule_shape()
     print("rules validation passed")
 
 

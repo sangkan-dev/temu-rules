@@ -1,7 +1,7 @@
 id: "NET-SSH-BANNER"
 name: "SSH service banner exposed"
 tech_stack: ["ssh"]
-severity: Info
+severity: info
 cvss: 0.0
 payload: ""
 request_method: GET

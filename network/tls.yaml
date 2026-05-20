@@ -1,7 +1,7 @@
 id: "NET-TLS-BANNER"
 name: "TLS service detected"
 tech_stack: ["tls"]
-severity: Info
+severity: info
 cvss: 0.0
 payload: ""
 request_method: GET

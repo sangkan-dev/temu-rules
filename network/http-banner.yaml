@@ -1,7 +1,7 @@
 id: "NET-HTTP-BANNER"
 name: "HTTP banner detected"
 tech_stack: ["http"]
-severity: Info
+severity: info
 cvss: 0.0
 payload: ""
 request_method: GET
