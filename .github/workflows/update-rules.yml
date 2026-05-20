@@ -68,6 +68,10 @@ jobs:
         run: |
           python3 -m pip install pyyaml
 
+      - name: Promote safe upstream updates
+        run: |
+          python3 scripts/promote_upstream.py --rule-type "${{ inputs.rule_type || 'all' }}"
+
       - name: Validate repository
         run: |
           python3 scripts/validate_rules.py
@@ -87,8 +91,13 @@ jobs:
             - NVD CVE API recent changes
             - SecLists dictionary snapshots
 
-            Review upstream snapshots before promoting entries into first-party Temu rules and dictionaries.
+            This workflow promotes low-risk upstream fingerprint and dictionary updates automatically, then validates all active rules before opening this PR.
           add-paths: |
+            dictionaries/**
+            fingerprint/**
+            network/**
+            vulnerability/**
+            rules-manifest.json
             upstream/**
           branch: automated/rules-update
           delete-branch: true
