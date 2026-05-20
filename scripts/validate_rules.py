@@ -61,6 +61,10 @@ def validate_temu_rule_shape() -> None:
             match_type = verify.get("match_type")
             if match_type not in MATCH_TYPES:
                 raise SystemExit(f"invalid verify.match_type in {path}: {match_type}")
+            if match_type == "BodyContains" and not verify.get("body_contains"):
+                raise SystemExit(f"BodyContains rule must define verify.body_contains: {path}")
+            if match_type == "BodyRegex" and not verify.get("body_regex"):
+                raise SystemExit(f"BodyRegex rule must define verify.body_regex: {path}")
 
 
 def main() -> None:

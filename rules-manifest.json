@@ -2,8 +2,7 @@
   "fingerprint": "fingerprint/fingerprint_rules.yaml",
   "vulnerability": [
     "vulnerability/sql-injection.yaml",
-    "vulnerability/xss.yaml",
-    "vulnerability/cve/2026.yaml"
+    "vulnerability/xss.yaml"
   ],
   "network": [
     "network/ssh.yaml",
