@@ -35,18 +35,18 @@ jobs:
         if: ${{ github.event_name == 'schedule' || inputs.rule_type == 'all' || inputs.rule_type == 'fingerprint' }}
         run: |
           curl --fail --silent --show-error --location \
-            https://raw.githubusercontent.com/AliasIO/wappalyzer/master/src/technologies.json \
-            --output upstream/fingerprint/wappalyzer-technologies.json
+            https://raw.githubusercontent.com/tomnomnom/wappalyzer/master/src/technologies/a.json \
+            --output upstream/fingerprint/wappalyzer-technologies-a.json
           curl --fail --silent --show-error --location \
-            https://raw.githubusercontent.com/0x727/FingerprintHub/master/指纹库/fingerprint.yml \
-            --output upstream/fingerprint/fingerprinthub.yml
+            https://raw.githubusercontent.com/0x727/FingerprintHub/main/web_fingerprint_v4.json \
+            --output upstream/fingerprint/fingerprinthub-web-v4.json
 
       - name: Fetch recent CVE data
         if: ${{ github.event_name == 'schedule' || inputs.rule_type == 'all' || inputs.rule_type == 'vulnerability' }}
         run: |
-          START_DATE="$(date -u -d '7 days ago' '+%Y-%m-%dT%H:%M:%S.000')"
-          END_DATE="$(date -u '+%Y-%m-%dT%H:%M:%S.000')"
-          curl --fail --silent --show-error --location \
+          START_DATE="$(date -u -d '7 days ago' '+%Y-%m-%dT%H:%M:%S.000Z')"
+          END_DATE="$(date -u '+%Y-%m-%dT%H:%M:%S.000Z')"
+          curl --retry 5 --retry-delay 3 --retry-all-errors --fail --silent --show-error --location \
             "https://services.nvd.nist.gov/rest/json/cves/2.0/?lastModStartDate=${START_DATE}&lastModEndDate=${END_DATE}" \
             --output upstream/cve/recent.json
 
