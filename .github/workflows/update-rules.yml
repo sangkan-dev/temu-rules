@@ -73,5 +73,7 @@ jobs:
             - NVD CVE API recent changes
 
             Review upstream snapshots before promoting entries into first-party Temu rules.
+          add-paths: |
+            upstream/**
           branch: automated/rules-update
           delete-branch: true
