@@ -1,0 +1,122 @@
+# Common web paths wordlist — 100 entries
+# Used by fuzzing crate for path discovery
+
+# Administrative interfaces
+/admin
+/admin/
+/administrator
+/administrator/
+/admin.php
+/admin.html
+/wp-admin
+/wp-admin/
+/phpmyadmin
+/phpmyadmin/
+/cpanel
+/webmail
+/panel
+/dashboard
+/manager
+/management
+/backend
+
+# Authentication
+/login
+/login.php
+/login.html
+/signin
+/signup
+/register
+/logout
+/auth
+/oauth
+/sso
+
+# API endpoints
+/api
+/api/v1
+/api/v2
+/api/v3
+/graphql
+/graphiql
+/rest
+/swagger
+/swagger-ui
+/swagger-ui.html
+/swagger.json
+/openapi.json
+/api-docs
+/docs
+
+# Version control / sensitive
+/.git/HEAD
+/.git/config
+/.svn/entries
+/.hg/hgrc
+/.env
+/.env.local
+/.env.production
+/.env.backup
+/.htaccess
+/.htpasswd
+
+# Backup & config files
+/config.php
+/config.yml
+/config.yaml
+/config.json
+/configuration.php
+/settings.php
+/settings.py
+/wp-config.php
+/web.config
+/app.config
+/database.yml
+/secrets.yml
+
+# Standard web files
+/robots.txt
+/sitemap.xml
+/sitemap.xml.gz
+/humans.txt
+/favicon.ico
+/crossdomain.xml
+/clientaccesspolicy.xml
+/security.txt
+/.well-known/security.txt
+
+# CMS & framework paths
+/wp-json
+/wp-json/wp/v2/users
+/xmlrpc.php
+/feed
+/rss
+/wp-cron.php
+/wp-content/debug.log
+
+# Monitoring & debug
+/status
+/health
+/healthcheck
+/ping
+/info
+/version
+/metrics
+/actuator
+/actuator/health
+/actuator/info
+/actuator/env
+/debug
+/trace
+/server-status
+/server-info
+
+# Uploads & static
+/upload
+/uploads
+/files
+/backup
+/backups
+/bak
+/old
+/archive

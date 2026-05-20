@@ -24,6 +24,7 @@ def validate_manifest() -> None:
         paths.append(manifest["fingerprint"])
     paths.extend(manifest.get("vulnerability", []))
     paths.extend(manifest.get("network", []))
+    paths.extend(manifest.get("dictionaries", []))
     for item in paths:
         if ".." in item:
             raise SystemExit(f"invalid manifest path: {item}")
@@ -67,11 +68,30 @@ def validate_temu_rule_shape() -> None:
                 raise SystemExit(f"BodyRegex rule must define verify.body_regex: {path}")
 
 
+def validate_dictionaries() -> None:
+    dictionary_root = ROOT / "dictionaries"
+    if not dictionary_root.exists():
+        return
+    for path in dictionary_root.rglob("*.txt"):
+        entries = []
+        with path.open("r", encoding="utf-8") as handle:
+            for line_number, line in enumerate(handle, start=1):
+                value = line.strip()
+                if not value or value.startswith("#"):
+                    continue
+                if "\x00" in value:
+                    raise SystemExit(f"dictionary contains null byte: {path}:{line_number}")
+                entries.append(value)
+        if not entries:
+            raise SystemExit(f"dictionary has no entries: {path}")
+
+
 def main() -> None:
     validate_manifest()
     validate_yaml_files()
     validate_payload_safety()
     validate_temu_rule_shape()
+    validate_dictionaries()
     print("rules validation passed")
 
 

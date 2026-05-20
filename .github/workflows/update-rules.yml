@@ -15,6 +15,7 @@ on:
           - fingerprint
           - vulnerability
           - network
+          - dictionaries
 
 permissions:
   contents: write
@@ -29,7 +30,7 @@ jobs:
 
       - name: Prepare upstream cache
         run: |
-          mkdir -p upstream/fingerprint upstream/cve upstream/network
+          mkdir -p upstream/fingerprint upstream/cve upstream/network upstream/dictionaries
 
       - name: Fetch fingerprint sources
         if: ${{ github.event_name == 'schedule' || inputs.rule_type == 'all' || inputs.rule_type == 'fingerprint' }}
@@ -49,6 +50,19 @@ jobs:
           curl --retry 5 --retry-delay 3 --retry-all-errors --fail --silent --show-error --location \
             "https://services.nvd.nist.gov/rest/json/cves/2.0/?lastModStartDate=${START_DATE}&lastModEndDate=${END_DATE}" \
             --output upstream/cve/recent.json
+
+      - name: Fetch dictionary sources
+        if: ${{ github.event_name == 'schedule' || inputs.rule_type == 'all' || inputs.rule_type == 'dictionaries' }}
+        run: |
+          curl --retry 5 --retry-delay 3 --retry-all-errors --fail --silent --show-error --location \
+            https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common.txt \
+            --output upstream/dictionaries/seclists-web-common.txt
+          curl --retry 5 --retry-delay 3 --retry-all-errors --fail --silent --show-error --location \
+            https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/burp-parameter-names.txt \
+            --output upstream/dictionaries/seclists-burp-parameter-names.txt
+          curl --retry 5 --retry-delay 3 --retry-all-errors --fail --silent --show-error --location \
+            https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/DNS/subdomains-top1million-5000.txt \
+            --output upstream/dictionaries/seclists-subdomains-top5000.txt
 
       - name: Install validator dependencies
         run: |
@@ -71,8 +85,9 @@ jobs:
             - Wappalyzer technologies
             - FingerprintHub fingerprints
             - NVD CVE API recent changes
+            - SecLists dictionary snapshots
 
-            Review upstream snapshots before promoting entries into first-party Temu rules.
+            Review upstream snapshots before promoting entries into first-party Temu rules and dictionaries.
           add-paths: |
             upstream/**
           branch: automated/rules-update

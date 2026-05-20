@@ -8,5 +8,11 @@
     "network/ssh.yaml",
     "network/tls.yaml",
     "network/http-banner.yaml"
+  ],
+  "dictionaries": [
+    "dictionaries/paths-small.txt",
+    "dictionaries/parameters-small.txt",
+    "dictionaries/subdomains-small.txt",
+    "dictionaries/subdomains-medium.txt"
   ]
 }
