@@ -1,0 +1,16 @@
+id: "SSRF-INTERNAL-URL-PROBE"
+name: "Server-side request forgery to internal URL"
+tech_stack: []
+severity: high
+cvss: 8.1
+payload: "http://127.0.0.1/"
+injection_points: [QueryParam]
+request_method: GET
+verify:
+  match_type: BodyRegex
+  response_codes: [200, 500]
+  body_regex: "(?i)(localhost|127\\.0\\.0\\.1|metadata|internal service|root:.*:0:0)"
+cve_id: null
+remediation: "Allowlist outbound URL destinations, block loopback/link-local/private ranges, and disable server-side redirects to untrusted URLs."
+references:
+  - "https://owasp.org/www-community/attacks/Server_Side_Request_Forgery"

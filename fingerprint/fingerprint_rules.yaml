@@ -1,13 +1,499 @@
-- name: "nginx"
-  category: WebServer
-  headers:
-    Server: "nginx(?:/([\\d.]+))?"
-  version: "\\1"
-  confidence: 0.95
+# Temu Fingerprint Rules — Wappalyzer-style technology detection
+# Format:
+#   name: Technology name (string)
+#   category: WebServer | Framework | Language | CMS | CDN | WAF | OS | Database | Library | Other
+#   confidence: float 0.0–1.0
+#   headers: { "Header-Name": "regex pattern (capture group 1 = version)" }
+#   body: ["substring or regex to search in HTML body"]
+#   meta: { "meta-name-attr": "regex on content attr (capture group 1 = version)" }
+#   cookies: { "cookie-name": "regex on cookie value" }
+#   version: "\\1"  # references first capture group from matched pattern
+#   implies: ["Tech1", "Tech2"]  # auto-add when this rule matches
 
-- name: "Apache HTTP Server"
+# ─────────────────────────────────────────────
+# Web Servers
+# ─────────────────────────────────────────────
+
+- name: nginx
   category: WebServer
-  headers:
-    Server: "Apache(?:/([\\d.]+))?"
-  version: "\\1"
   confidence: 0.95
+  headers:
+    Server: "(?i)nginx(?:/([\\d.]+))?"
+  version: "\\1"
+
+- name: Apache
+  category: WebServer
+  confidence: 0.95
+  headers:
+    Server: "(?i)Apache(?:/([\\d.]+))?"
+  version: "\\1"
+
+- name: IIS
+  category: WebServer
+  confidence: 0.95
+  headers:
+    Server: "(?i)Microsoft-IIS(?:/([\\d.]+))?"
+  version: "\\1"
+
+- name: LiteSpeed
+  category: WebServer
+  confidence: 0.95
+  headers:
+    Server: "(?i)LiteSpeed"
+
+- name: Caddy
+  category: WebServer
+  confidence: 0.90
+  headers:
+    Server: "(?i)Caddy"
+
+- name: Gunicorn
+  category: WebServer
+  confidence: 0.90
+  headers:
+    Server: "(?i)gunicorn(?:/([\\d.]+))?"
+  version: "\\1"
+
+- name: Tomcat
+  category: WebServer
+  confidence: 0.90
+  headers:
+    Server: "(?i)Apache-Coyote(?:/([\\d.]+))?"
+  version: "\\1"
+
+- name: Varnish
+  category: WebServer
+  confidence: 0.90
+  headers:
+    X-Varnish: ".*"
+
+- name: OpenResty
+  category: WebServer
+  confidence: 0.90
+  headers:
+    Server: "(?i)openresty(?:/([\\d.]+))?"
+  version: "\\1"
+
+# ─────────────────────────────────────────────
+# Languages
+# ─────────────────────────────────────────────
+
+- name: PHP
+  category: Language
+  confidence: 0.90
+  headers:
+    X-Powered-By: "(?i)PHP(?:/([\\d.]+))?"
+  version: "\\1"
+
+- name: ASP.NET
+  category: Framework
+  confidence: 0.95
+  headers:
+    X-AspNet-Version: "([\\d.]+)"
+  version: "\\1"
+
+- name: ASP.NET
+  category: Framework
+  confidence: 0.90
+  headers:
+    X-Powered-By: "(?i)ASP\\.NET"
+
+- name: Ruby on Rails
+  category: Framework
+  confidence: 0.80
+  headers:
+    X-Powered-By: "(?i)Phusion Passenger(?:/([\\d.]+))?"
+  cookies:
+    _session_id: ".*"
+  version: "\\1"
+
+- name: Django
+  category: Framework
+  confidence: 0.75
+  cookies:
+    csrftoken: ".*"
+  headers:
+    X-Frame-Options: "(?i)SAMEORIGIN"
+
+- name: Laravel
+  category: Framework
+  confidence: 0.80
+  cookies:
+    laravel_session: ".*"
+  headers:
+    X-Powered-By: "(?i)PHP"
+  implies: ["PHP"]
+
+- name: Express
+  category: Framework
+  confidence: 0.85
+  headers:
+    X-Powered-By: "(?i)Express"
+  implies: ["Node.js"]
+
+- name: Node.js
+  category: Language
+  confidence: 0.75
+  headers:
+    X-Powered-By: "(?i)node\\.js(?:/([\\d.]+))?"
+  version: "\\1"
+
+- name: Next.js
+  category: Framework
+  confidence: 0.85
+  headers:
+    X-Powered-By: "(?i)Next\\.js"
+  body:
+    - "__NEXT_DATA__"
+  implies: ["React", "Node.js"]
+
+- name: Nuxt.js
+  category: Framework
+  confidence: 0.85
+  body:
+    - "__nuxt"
+    - "__NUXT_DATA__"
+  implies: ["Vue.js", "Node.js"]
+
+- name: Spring
+  category: Framework
+  confidence: 0.75
+  headers:
+    X-Application-Context: ".*"
+
+# ─────────────────────────────────────────────
+# CMS
+# ─────────────────────────────────────────────
+
+- name: WordPress
+  category: CMS
+  confidence: 0.95
+  meta:
+    generator: "(?i)WordPress(?:\\s+([\\d.]+))?"
+  version: "\\1"
+  implies: ["PHP", "MySQL"]
+
+- name: WordPress
+  category: CMS
+  confidence: 0.85
+  body:
+    - "wp-content/"
+    - "wp-includes/"
+  implies: ["PHP", "MySQL"]
+
+- name: Drupal
+  category: CMS
+  confidence: 0.90
+  meta:
+    generator: "(?i)Drupal(?:\\s+([\\d.]+))?"
+  body:
+    - "sites/default/files"
+    - "Drupal.settings"
+  version: "\\1"
+  implies: ["PHP"]
+
+- name: Joomla
+  category: CMS
+  confidence: 0.90
+  meta:
+    generator: "(?i)Joomla!(?:\\s+([\\d.]+))?"
+  body:
+    - "/components/com_"
+    - "/media/jui/"
+  version: "\\1"
+  implies: ["PHP"]
+
+- name: Magento
+  category: CMS
+  confidence: 0.85
+  body:
+    - "Mage.Cookies"
+    - "/skin/frontend/"
+    - "var BLANK_URL"
+  cookies:
+    frontend: ".*"
+  implies: ["PHP"]
+
+- name: Ghost
+  category: CMS
+  confidence: 0.85
+  meta:
+    generator: "(?i)Ghost(?:\\s+([\\d.]+))?"
+  body:
+    - "ghost-url"
+    - "/ghost/api/"
+  version: "\\1"
+  implies: ["Node.js"]
+
+- name: Typo3
+  category: CMS
+  confidence: 0.85
+  meta:
+    generator: "(?i)TYPO3(?:\\s+CMS\\s+([\\d.]+))?"
+  body:
+    - "typo3/sysext"
+  version: "\\1"
+  implies: ["PHP"]
+
+- name: Shopify
+  category: CMS
+  confidence: 0.90
+  body:
+    - "Shopify.theme"
+    - "cdn.shopify.com"
+
+- name: Wix
+  category: CMS
+  confidence: 0.90
+  body:
+    - "static.wixstatic.com"
+    - "wix-warmup-data"
+
+- name: Squarespace
+  category: CMS
+  confidence: 0.90
+  body:
+    - "squarespace.com"
+    - "Static.SQUARESPACE_CONTEXT"
+
+# ─────────────────────────────────────────────
+# JS Libraries & Frameworks
+# ─────────────────────────────────────────────
+
+- name: jQuery
+  category: Library
+  confidence: 0.90
+  body:
+    - "jquery[.-]([\\d]+\\.[\\d]+\\.[\\d]+)(?:\\.min)?\\.js"
+
+- name: Bootstrap
+  category: Library
+  confidence: 0.85
+  body:
+    - "bootstrap(?:\\.([\\d]+\\.[\\d]+\\.[\\d]+))?\\.min\\.(css|js)"
+
+- name: React
+  category: Library
+  confidence: 0.85
+  body:
+    - "react.production.min.js"
+    - "react.development.js"
+    - "__reactFiber"
+    - "data-reactroot"
+
+- name: Vue.js
+  category: Library
+  confidence: 0.85
+  body:
+    - "vue.min.js"
+    - "vue.js"
+    - "__vue__"
+    - "data-v-"
+
+- name: Angular
+  category: Library
+  confidence: 0.85
+  body:
+    - "ng-version="
+    - "angular.min.js"
+    - "ng-app"
+    - "<app-root"
+    - "polyfills\\.js"
+    - "main\\.js[^A-Za-z0-9_]"
+
+- name: Angular Material
+  category: Library
+  confidence: 0.75
+  body:
+    - "--mat-sys-"
+    - "mat-mdc-"
+  implies: ["Angular"]
+
+- name: OWASP Juice Shop
+  category: Other
+  confidence: 0.99
+  body:
+    - "OWASP Juice Shop"
+    - "Probably the most modern and sophisticated insecure web application"
+    - "assets/public/favicon_js\\.ico"
+  implies: ["Angular", "Angular Material", "Node.js", "Express"]
+
+- name: Lodash
+  category: Library
+  confidence: 0.75
+  body:
+    - "lodash.min.js"
+    - "lodash.js"
+
+- name: Moment.js
+  category: Library
+  confidence: 0.75
+  body:
+    - "moment.min.js"
+    - "moment.js"
+
+- name: Axios
+  category: Library
+  confidence: 0.70
+  body:
+    - "axios.min.js"
+
+- name: Webpack
+  category: Other
+  confidence: 0.75
+  body:
+    - "__webpack_require__"
+    - "webpackJsonp"
+
+# ─────────────────────────────────────────────
+# CDN / WAF
+# ─────────────────────────────────────────────
+
+- name: Cloudflare
+  category: WAF
+  confidence: 0.95
+  headers:
+    CF-Ray: ".*"
+
+- name: Cloudflare
+  category: CDN
+  confidence: 0.90
+  headers:
+    Server: "(?i)cloudflare"
+
+- name: Sucuri
+  category: WAF
+  confidence: 0.95
+  headers:
+    X-Sucuri-ID: ".*"
+
+- name: Sucuri
+  category: WAF
+  confidence: 0.90
+  headers:
+    X-Sucuri-Cache: ".*"
+
+- name: Akamai
+  category: CDN
+  confidence: 0.90
+  headers:
+    X-Check-Cacheable: ".*"
+    Server: "(?i)AkamaiGHost"
+
+- name: Fastly
+  category: CDN
+  confidence: 0.90
+  headers:
+    X-Served-By: "(?i)cache-"
+    X-Cache: ".*"
+    Fastly-Debug-Digest: ".*"
+
+- name: AWS CloudFront
+  category: CDN
+  confidence: 0.90
+  headers:
+    X-Amz-Cf-Id: ".*"
+
+- name: Imperva
+  category: WAF
+  confidence: 0.90
+  headers:
+    X-CDN: "(?i)Incapsula"
+
+- name: AWS ALB
+  category: Other
+  confidence: 0.80
+  cookies:
+    AWSALB: ".*"
+
+- name: Azure
+  category: Other
+  confidence: 0.80
+  headers:
+    X-Ms-Request-Id: ".*"
+    X-Powered-By: "(?i)ASP\\.NET"
+
+- name: Google Cloud
+  category: Other
+  confidence: 0.75
+  headers:
+    Server: "(?i)ESF"
+    X-GUploader-UploadID: ".*"
+
+# ─────────────────────────────────────────────
+# Databases (via hints)
+# ─────────────────────────────────────────────
+
+- name: MySQL
+  category: Database
+  confidence: 0.60
+  body:
+    - "mysql_connect"
+    - "mysqli_connect"
+
+- name: PostgreSQL
+  category: Database
+  confidence: 0.60
+  body:
+    - "pg_connect"
+    - "PDO::pgsql"
+
+- name: MongoDB
+  category: Database
+  confidence: 0.60
+  body:
+    - "mongodb://"
+    - "MongoClient"
+
+# ─────────────────────────────────────────────
+# Other / Misc
+# ─────────────────────────────────────────────
+
+- name: Nginx Unit
+  category: WebServer
+  confidence: 0.85
+  headers:
+    Server: "(?i)Unit(?:/([\\d.]+))?"
+  version: "\\1"
+
+- name: HAProxy
+  category: Other
+  confidence: 0.85
+  headers:
+    Server: "(?i)haproxy(?:/([\\d.]+))?"
+  version: "\\1"
+
+- name: Envoy
+  category: Other
+  confidence: 0.85
+  headers:
+    Server: "(?i)envoy"
+    X-Envoy-Upstream-Service-Time: ".*"
+
+- name: Traefik
+  category: Other
+  confidence: 0.85
+  headers:
+    Server: "(?i)traefik"
+    X-Powered-By: "(?i)traefik"
+
+- name: Netlify
+  category: CDN
+  confidence: 0.90
+  headers:
+    X-Nf-Request-Id: ".*"
+    Server: "(?i)Netlify"
+
+- name: Vercel
+  category: CDN
+  confidence: 0.90
+  headers:
+    X-Vercel-Id: ".*"
+    Server: "(?i)Vercel"
+
+- name: Heroku
+  category: Other
+  confidence: 0.80
+  headers:
+    X-Request-Id: ".*"
+    Via: "(?i)1\\.1 vegur"

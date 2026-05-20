@@ -1,0 +1,15 @@
+id: "XSS-REFLECTION"
+name: "Reflected Cross-Site Scripting (XSS)"
+tech_stack: []
+severity: high
+cvss: 7.2
+payload: "<script>alert(1)</script>"
+request_method: GET
+verify:
+  match_type: BodyContains
+  response_codes: [200]
+  body_contains: "<script>alert(1)</script>"
+cve_id: null
+remediation: "Encode output dan gunakan Content-Security-Policy header"
+references:
+  - "https://owasp.org/www-community/attacks/xss/"

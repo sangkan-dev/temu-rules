@@ -1,0 +1,15 @@
+id: "SQLI-REFLECTION"
+name: "Reflected SQL Injection (error-based)"
+tech_stack: ["php", "mysql", "mariadb", "mssql", "postgresql"]
+severity: critical
+cvss: 9.8
+payload: "' OR '1'='1"
+request_method: GET
+verify:
+  match_type: BodyContains
+  response_codes: [200, 500]
+  body_contains: "syntax error"
+cve_id: null
+remediation: "Gunakan parameterized queries / prepared statements"
+references:
+  - "https://owasp.org/www-community/attacks/SQL_Injection"

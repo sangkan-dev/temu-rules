@@ -1,0 +1,18 @@
+id: "SQLI-MSSQL-TIME"
+name: "Time-based SQL injection (Microsoft SQL Server)"
+tech_stack: ["mssql", "sql server", "asp.net", "iis"]
+severity: critical
+cvss: 9.8
+payload: "'; WAITFOR DELAY '0:0:5'--"
+baseline_payload: "temu-baseline"
+injection_points: [QueryParam, Header, Cookie, Body]
+injection_name: "temu_probe"
+request_method: GET
+verify:
+  match_type: TimeBased
+  response_codes: [200, 500]
+  time_threshold_secs: 5
+cve_id: null
+remediation: "Use parameterized queries and stored procedure parameters instead of dynamic SQL."
+references:
+  - "https://owasp.org/www-community/attacks/SQL_Injection"

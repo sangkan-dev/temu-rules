@@ -1,0 +1,18 @@
+id: "SQLI-POSTGRESQL-TIME"
+name: "Time-based SQL injection (PostgreSQL)"
+tech_stack: ["postgresql", "postgres", "php", "django"]
+severity: critical
+cvss: 9.8
+payload: "' OR pg_sleep(5) -- "
+baseline_payload: "temu-baseline"
+injection_points: [QueryParam, Header, Cookie, Body]
+injection_name: "temu_probe"
+request_method: GET
+verify:
+  match_type: TimeBased
+  response_codes: [200, 500]
+  time_threshold_secs: 5
+cve_id: null
+remediation: "Use parameterized queries and strict server-side input validation."
+references:
+  - "https://owasp.org/www-community/attacks/SQL_Injection"

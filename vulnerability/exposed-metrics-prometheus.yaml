@@ -1,0 +1,15 @@
+id: "EXPOSED-METRICS-PROMETHEUS"
+name: "Exposed Prometheus metrics endpoint"
+tech_stack: []
+severity: medium
+cvss: 5.3
+payload: "/metrics"
+request_method: GET
+verify:
+  match_type: BodyRegex
+  response_codes: [200]
+  body_regex: "(?i)(^|\\n)#\\s*(HELP|TYPE)\\s+|prometheus|process_cpu|nodejs_|http_requests_total"
+cve_id: null
+remediation: "Restrict metrics endpoints to internal monitoring networks or require authentication."
+references:
+  - "https://owasp.org/www-project-web-security-testing-guide/"

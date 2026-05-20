@@ -1,0 +1,15 @@
+id: "SENSITIVE-FILES-ENV"
+name: "Exposed .env file"
+tech_stack: []
+severity: high
+cvss: 7.5
+payload: "/.env"
+request_method: GET
+verify:
+  match_type: StatusCode
+  response_codes: [200]
+  body_contains: "DB_PASSWORD"
+cve_id: null
+remediation: "Pindahkan file .env ke luar web root dan blokir akses via web server config"
+references:
+  - "https://owasp.org/www-project-web-security-testing-guide/"

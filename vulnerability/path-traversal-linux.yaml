@@ -1,0 +1,15 @@
+id: "PATH-TRAVERSAL-LINUX-PASSWD"
+name: "Path traversal exposure (Linux passwd)"
+tech_stack: []
+severity: high
+cvss: 7.5
+payload: "/../../../../../../etc/passwd"
+request_method: GET
+verify:
+  match_type: BodyRegex
+  response_codes: [200]
+  body_regex: "root:.*:0:0:"
+cve_id: null
+remediation: "Normalize paths, reject traversal sequences, and serve files only from an allowlisted directory."
+references:
+  - "https://owasp.org/www-community/attacks/Path_Traversal"

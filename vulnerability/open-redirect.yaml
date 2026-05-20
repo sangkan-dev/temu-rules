@@ -1,0 +1,17 @@
+id: "OPEN-REDIRECT-EXTERNAL-LOCATION"
+name: "Open redirect to external domain"
+tech_stack: []
+severity: medium
+cvss: 6.1
+payload: "https://temu.invalid/redirect-check"
+injection_points: [QueryParam]
+request_method: GET
+verify:
+  match_type: HeaderContains
+  response_codes: [301, 302, 303, 307, 308]
+  header_name: "Location"
+  header_contains: "https://temu.invalid/redirect-check"
+cve_id: null
+remediation: "Allowlist redirect destinations and use relative redirects for internal navigation."
+references:
+  - "https://owasp.org/www-community/attacks/Unvalidated_Redirects_and_Forwards_Cheat_Sheet"

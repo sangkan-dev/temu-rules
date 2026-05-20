@@ -1,18 +1,40 @@
 {
   "fingerprint": "fingerprint/fingerprint_rules.yaml",
   "vulnerability": [
+    "vulnerability/cve/cve-2019-19781-citrix-path-traversal.yaml",
+    "vulnerability/cve/cve-2021-26855-exchange-ssrf.yaml",
+    "vulnerability/cve/cve-2021-34473-exchange-proxyshell.yaml",
+    "vulnerability/cve/cve-2021-41773-apache-path-traversal.yaml",
+    "vulnerability/cve/cve-2021-44228-log4shell.yaml",
+    "vulnerability/cve/cve-2022-22965-spring4shell.yaml",
+    "vulnerability/cve/cve-2023-22515-confluence-rce.yaml",
+    "vulnerability/cve/cve-2023-44487-http2-rapid-reset.yaml",
+    "vulnerability/cve/cve-2023-46747-bigip-rce.yaml",
+    "vulnerability/cve/cve-2024-3400-palo-alto-rce.yaml",
+    "vulnerability/exposed-metrics-prometheus.yaml",
+    "vulnerability/open-redirect.yaml",
+    "vulnerability/path-traversal-encoded.yaml",
+    "vulnerability/path-traversal-linux.yaml",
+    "vulnerability/path-traversal-windows.yaml",
+    "vulnerability/sensitive-files.yaml",
     "vulnerability/sql-injection.yaml",
+    "vulnerability/sqli-reflection.yaml",
+    "vulnerability/sqli-time-mssql.yaml",
+    "vulnerability/sqli-time-mysql.yaml",
+    "vulnerability/sqli-time-postgresql.yaml",
+    "vulnerability/ssrf-internal-redirect.yaml",
+    "vulnerability/xss-reflection.yaml",
     "vulnerability/xss.yaml"
   ],
   "network": [
+    "network/http-banner.yaml",
     "network/ssh.yaml",
-    "network/tls.yaml",
-    "network/http-banner.yaml"
+    "network/tls.yaml"
   ],
   "dictionaries": [
-    "dictionaries/paths-small.txt",
     "dictionaries/parameters-small.txt",
-    "dictionaries/subdomains-small.txt",
-    "dictionaries/subdomains-medium.txt"
+    "dictionaries/paths-small.txt",
+    "dictionaries/subdomains-medium.txt",
+    "dictionaries/subdomains-small.txt"
   ]
 }

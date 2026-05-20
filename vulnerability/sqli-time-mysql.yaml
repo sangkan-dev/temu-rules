@@ -1,0 +1,18 @@
+id: "SQLI-MYSQL-TIME"
+name: "Time-based SQL injection (MySQL)"
+tech_stack: ["mysql", "mariadb", "php"]
+severity: critical
+cvss: 9.8
+payload: "' OR SLEEP(5) -- "
+baseline_payload: "temu-baseline"
+injection_points: [QueryParam, Header, Cookie, Body]
+injection_name: "temu_probe"
+request_method: GET
+verify:
+  match_type: TimeBased
+  response_codes: [200, 500]
+  time_threshold_secs: 5
+cve_id: null
+remediation: "Use parameterized queries and avoid string concatenation in SQL statements."
+references:
+  - "https://owasp.org/www-community/attacks/SQL_Injection"

