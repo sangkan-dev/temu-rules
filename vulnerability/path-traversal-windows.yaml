@@ -8,7 +8,7 @@ request_method: GET
 verify:
   match_type: BodyRegex
   response_codes: [200]
-  body_regex: "(?i)(localhost|#.*copyright.*microsoft)"
+  body_regex: "(?mi)^(?:\\d{1,3}\\.){3}\\d{1,3}\\s+localhost\\b|^#.*copyright \\(c\\).*microsoft"
 cve_id: null
 remediation: "Canonicalize requested paths and restrict file access to an allowlisted base directory."
 references:
