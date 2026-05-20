@@ -1,0 +1,18 @@
+id: "NET-TLS-BANNER"
+name: "TLS service detected"
+tech_stack: ["tls"]
+severity: Info
+cvss: 0.0
+payload: ""
+request_method: GET
+request_headers: {}
+request_body: null
+verify:
+  match_type: StatusCode
+  time_threshold_secs: null
+  response_codes: [200]
+  body_regex: null
+cve_id: null
+remediation: "Review TLS protocol versions, certificate validity, and cipher policy."
+references:
+  - "https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Security_Cheat_Sheet.html"

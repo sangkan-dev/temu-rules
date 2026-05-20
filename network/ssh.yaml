@@ -1,0 +1,18 @@
+id: "NET-SSH-BANNER"
+name: "SSH service banner exposed"
+tech_stack: ["ssh"]
+severity: Info
+cvss: 0.0
+payload: ""
+request_method: GET
+request_headers: {}
+request_body: null
+verify:
+  match_type: StatusCode
+  time_threshold_secs: null
+  response_codes: [200]
+  body_regex: null
+cve_id: null
+remediation: "Restrict SSH exposure to authorized networks and enforce key-based authentication."
+references:
+  - "https://www.cisecurity.org/controls"

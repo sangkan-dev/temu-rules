@@ -1,0 +1,13 @@
+- name: "nginx"
+  category: WebServer
+  headers:
+    Server: "nginx(?:/([\\d.]+))?"
+  version: "\\1"
+  confidence: 0.95
+
+- name: "Apache HTTP Server"
+  category: WebServer
+  headers:
+    Server: "Apache(?:/([\\d.]+))?"
+  version: "\\1"
+  confidence: 0.95

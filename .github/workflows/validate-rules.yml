@@ -1,0 +1,23 @@
+name: Validate Rules
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-rules:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout rules
+        uses: actions/checkout@v4
+
+      - name: Install validator dependencies
+        run: |
+          python3 -m pip install pyyaml
+
+      - name: Validate repository
+        run: |
+          python3 scripts/validate_rules.py

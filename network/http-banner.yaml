@@ -1,0 +1,18 @@
+id: "NET-HTTP-BANNER"
+name: "HTTP banner detected"
+tech_stack: ["http"]
+severity: Info
+cvss: 0.0
+payload: ""
+request_method: GET
+request_headers: {}
+request_body: null
+verify:
+  match_type: StatusCode
+  time_threshold_secs: null
+  response_codes: [200]
+  body_regex: null
+cve_id: null
+remediation: "Review exposed HTTP service metadata and remove unnecessary version disclosure."
+references:
+  - "https://owasp.org/www-project-web-security-testing-guide/"

@@ -1,0 +1,13 @@
+{
+  "fingerprint": "fingerprint/fingerprint_rules.yaml",
+  "vulnerability": [
+    "vulnerability/sql-injection.yaml",
+    "vulnerability/xss.yaml",
+    "vulnerability/cve/2026.yaml"
+  ],
+  "network": [
+    "network/ssh.yaml",
+    "network/tls.yaml",
+    "network/http-banner.yaml"
+  ]
+}
