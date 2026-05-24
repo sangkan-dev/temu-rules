@@ -30,6 +30,8 @@ def validate_manifest() -> None:
             raise SystemExit(f"invalid manifest path: {item}")
         if not (ROOT / item).is_file():
             raise SystemExit(f"manifest path does not exist: {item}")
+        if item.startswith("staging/"):
+            raise SystemExit(f"staging candidate must never be executable through manifest: {item}")
 
 
 def validate_yaml_files() -> None:
@@ -86,12 +88,31 @@ def validate_dictionaries() -> None:
             raise SystemExit(f"dictionary has no entries: {path}")
 
 
+def validate_candidates() -> None:
+    staging = ROOT / "staging" / "candidates"
+    if not staging.exists():
+        return
+    for path in staging.rglob("*.yaml"):
+        document = load_yaml(path) or []
+        candidates = document if isinstance(document, list) else [document]
+        for data in candidates:
+            if data.get("status") != "candidate" or data.get("executable") is not False:
+                raise SystemExit(f"staging candidate must be explicitly non-executable: {path}")
+            if data.get("risk_level") != "unknown" or data.get("requires_confirmation") is not True:
+                raise SystemExit(f"staging candidate must be unknown-risk and require review: {path}")
+            if (data.get("detection") or {}).get("payload") is not None:
+                raise SystemExit(f"staging candidate cannot carry an executable payload: {path}")
+            if not data.get("cve_id") or not data.get("references"):
+                raise SystemExit(f"staging candidate lacks CVE provenance: {path}")
+
+
 def main() -> None:
     validate_manifest()
     validate_yaml_files()
     validate_payload_safety()
     validate_temu_rule_shape()
     validate_dictionaries()
+    validate_candidates()
     print("rules validation passed")
 
 

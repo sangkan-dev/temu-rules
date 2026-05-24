@@ -50,6 +50,12 @@ jobs:
           curl --retry 5 --retry-delay 3 --retry-all-errors --fail --silent --show-error --location \
             "https://services.nvd.nist.gov/rest/json/cves/2.0/?lastModStartDate=${START_DATE}&lastModEndDate=${END_DATE}" \
             --output upstream/cve/recent.json
+          curl --retry 5 --retry-delay 3 --retry-all-errors --fail --silent --show-error --location \
+            "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json" \
+            --output upstream/cve/cisa-kev.json
+          curl --retry 5 --retry-delay 3 --retry-all-errors --fail --silent --show-error --location \
+            "https://gitlab.com/exploit-database/exploitdb/-/raw/main/files_exploits.csv" \
+            --output upstream/cve/exploitdb-files.csv
 
       - name: Fetch dictionary sources
         if: ${{ github.event_name == 'schedule' || inputs.rule_type == 'all' || inputs.rule_type == 'dictionaries' }}
@@ -71,6 +77,11 @@ jobs:
       - name: Promote safe upstream updates
         run: |
           python3 scripts/promote_upstream.py --rule-type "${{ inputs.rule_type || 'all' }}"
+
+      - name: Generate non-executable CVE candidates
+        if: ${{ github.event_name == 'schedule' || inputs.rule_type == 'all' || inputs.rule_type == 'vulnerability' }}
+        run: |
+          python3 scripts/generate_candidates.py
 
       - name: Validate repository
         run: |
@@ -97,6 +108,7 @@ jobs:
             fingerprint/**
             network/**
             vulnerability/**
+            staging/**
             rules-manifest.json
             upstream/**
           branch: automated/rules-update
