@@ -87,6 +87,7 @@
 .well-known/repute-template
 .well-known/resourcesync
 .well-known/security.txt
+.well-known/ssf-configuration
 .well-known/humans.txt
 .well-known/stun-key
 .well-known/thread
