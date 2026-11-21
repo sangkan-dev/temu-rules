@@ -1530,60 +1530,122 @@
   - '@tarekraafat/autocomplete\.js@([\d\.]+)/'
   - version:\\1
   generated_by: temu-rules-upstream
-- name: open_journal_systems
+- name: cyberpanel
   category: Other
   confidence: 0.55
   body:
-  - pkp\-lib
+  - cyberpanel
   generated_by: temu-rules-upstream
-- name: ind780_firmware
+- name: ueditor
   category: Other
   confidence: 0.55
   body:
-  - ind780
+  - ueditor
   generated_by: temu-rules-upstream
-- name: compact_5500r_firmware
+- name: langchain
   category: Other
   confidence: 0.55
   body:
-  - auerswald
+  - <title>langchain\ chat</title>
   generated_by: temu-rules-upstream
-- name: traefik
+- name: linear_emerge_e3_access_control_firmware
   category: Other
   confidence: 0.55
   body:
-  - content\-security\-policy:\ \*\.traefik\.io;
+  - linear\ emerge
   generated_by: temu-rules-upstream
-- name: quantum_security_gateway
+- name: altalink
   category: Other
   confidence: 0.55
   body:
-  - check\ point\ ssl\ network
+  - altalink
   generated_by: temu-rules-upstream
-- name: w3-total-cache
+- name: mastodon
   category: Other
   confidence: 0.55
   body:
-  - /wp\-content/plugins/w3\-total\-cache/
-  - w3\-total\-cache
+  - mastodon\-
   generated_by: temu-rules-upstream
-- name: debian
+- name: next.js
   category: Other
   confidence: 0.55
   body:
-  - <h1>welcome\ to\ nginx\ on\ debian!</h1>
+  - /_next/static
   generated_by: temu-rules-upstream
-- name: cbx-bookmark-favorite
+- name: edusoho
   category: Other
   confidence: 0.55
   body:
-  - cbxwpbookmark
+  - powered\ by\ <a\ href="http://www\.edusoho\.com/"\ target="_blank">edusoho
   generated_by: temu-rules-upstream
-- name: ray
+- name: grandnode
   category: Other
   confidence: 0.55
   body:
-  - ray\ dashboard
+  - x\-powered\-by:\ grandnode
+  generated_by: temu-rules-upstream
+- name: rsfiles
+  category: Other
+  confidence: 0.55
+  body:
+  - com_rsfiles
+  generated_by: temu-rules-upstream
+- name: protop
+  category: Other
+  confidence: 0.55
+  body:
+  - <title>protop
+  generated_by: temu-rules-upstream
+- name: aura_device_services
+  category: Other
+  confidence: 0.55
+  body:
+  - avaya\ aura
+  - nbsp;utility\ services
+  generated_by: temu-rules-upstream
+- name: aura_utility_services
+  category: Other
+  confidence: 0.55
+  body:
+  - avaya\ aura
+  generated_by: temu-rules-upstream
+- name: avaya
+  category: Other
+  confidence: 0.55
+  body:
+  - avaya\ j179\ phone
+  generated_by: temu-rules-upstream
+- name: phpshe
+  category: Other
+  confidence: 0.55
+  body:
+  - content="phpshe
+  - powered\ by\ phpshe
+  generated_by: temu-rules-upstream
+- name: leadconnector
+  category: Other
+  confidence: 0.55
+  body:
+  - /wp\-content/plugins/leadconnector/
+  - leadconnector
+  generated_by: temu-rules-upstream
+- name: camaleon_cms
+  category: Other
+  confidence: 0.55
+  body:
+  - camaleon_cms
+  generated_by: temu-rules-upstream
+- name: webp_server_go
+  category: Other
+  confidence: 0.55
+  body:
+  - webp
+  generated_by: temu-rules-upstream
+- name: milvus
+  category: Other
+  confidence: 0.55
+  body:
+  - 404\ page\ not\ found"\ port:"9091
   generated_by: temu-rules-upstream
 - name: wpbookit
   category: Other
@@ -1591,237 +1653,43 @@
   body:
   - /wp\-content/plugins/wpbookit/
   generated_by: temu-rules-upstream
-- name: mantisbt
+- name: netmaker
   category: Other
   confidence: 0.55
   body:
-  - alt="mantis\ bugtracker
-  - powered\ by\ mantis\ bugtracker
+  - netmaker
   generated_by: temu-rules-upstream
-- name: tikiwiki_cms-groupware
+- name: memberglut
   category: Other
   confidence: 0.55
   body:
-  - tiki\ wiki
+  - wp\-content/plugins/memberglut
   generated_by: temu-rules-upstream
-- name: enterprise_server
+- name: ckan
   category: Other
   confidence: 0.55
   body:
-  - micro\ focus\ dsd
+  - ckan\ 2\.8\.2"
+  - html:"ckan\ 2\.3
   generated_by: temu-rules-upstream
-- name: proxmox_mail_gateway
+- name: processplus
   category: Other
   confidence: 0.55
   body:
-  - proxmox\ =\ \{
+  - process\ plus
   generated_by: temu-rules-upstream
-- name: clickshare_cs-100_huddle_firmware
+- name: acymailing
   category: Other
   confidence: 0.55
   body:
-  - clicksharesession
+  - acymailing
+  - com_acym
   generated_by: temu-rules-upstream
-- name: listingpro
+- name: discuz_x
   category: Other
   confidence: 0.55
   body:
-  - /wp\-content/plugins/listingpro
-  generated_by: temu-rules-upstream
-- name: gradio
-  category: Other
-  confidence: 0.55
-  body:
-  - gradio\-app
-  generated_by: temu-rules-upstream
-- name: laravel_filemanager
-  category: Other
-  confidence: 0.55
-  body:
-  - laravel\ filemanager
-  generated_by: temu-rules-upstream
-- name: mail-mint
-  category: Other
-  confidence: 0.55
-  body:
-  - /wp\-content/plugins/mail\-mint/
-  generated_by: temu-rules-upstream
-- name: cloudtest
-  category: Other
-  confidence: 0.55
-  body:
-  - akamai\ cloudtest
-  generated_by: temu-rules-upstream
-- name: dotnetnuke
-  category: Other
-  confidence: 0.55
-  body:
-  - set\-cookie:\ dnn_ismobile
-  generated_by: temu-rules-upstream
-- name: sunlogin
-  category: Other
-  confidence: 0.55
-  body:
-  - content\-length:\ 46
-  - content\-type:\ application/json
-  - \{"success":false,"msg":"verification\ failure"\}
-  generated_by: temu-rules-upstream
-- name: blogengine.net
-  category: Other
-  confidence: 0.55
-  body:
-  - blogengine\.net
-  generated_by: temu-rules-upstream
-- name: tinacms
-  category: Other
-  confidence: 0.55
-  body:
-  - tinacms
-  generated_by: temu-rules-upstream
-- name: opencti
-  category: Other
-  confidence: 0.55
-  body:
-  - opencti
-  generated_by: temu-rules-upstream
-- name: appwrite
-  category: Other
-  confidence: 0.55
-  body:
-  - <title>sign\ in\ \-\ appwrite</title>
-  generated_by: temu-rules-upstream
-- name: torchserve
-  category: Other
-  confidence: 0.55
-  body:
-  - requested\ method\ is\ not\ allowed,\ please\ refer\ to\ api\ document
-  generated_by: temu-rules-upstream
-- name: theia
-  category: Other
-  confidence: 0.55
-  body:
-  - eclipse\-theia
-  generated_by: temu-rules-upstream
-- name: mojarra
-  category: Other
-  confidence: 0.55
-  body:
-  - javax\.faces\.resource
-  - javax\.faces\.viewstate
-  generated_by: temu-rules-upstream
-- name: dgraph
-  category: Other
-  confidence: 0.55
-  body:
-  - dgraph
-  generated_by: temu-rules-upstream
-- name: zentao
-  category: Other
-  confidence: 0.55
-  body:
-  - zentao
-  generated_by: temu-rules-upstream
-- name: ninja-tables
-  category: Other
-  confidence: 0.55
-  body:
-  - /wp\-content/plugins/ninja\-tables/
-  generated_by: temu-rules-upstream
-- name: nocobase
-  category: Other
-  confidence: 0.55
-  body:
-  - __nocobase_public_path__
-  generated_by: temu-rules-upstream
-- name: ollama
-  category: Other
-  confidence: 0.55
-  body:
-  - ollama
-  generated_by: temu-rules-upstream
-- name: lexmark
-  category: Other
-  confidence: 0.55
-  body:
-  - /status
-  - <title>lexmark
-  generated_by: temu-rules-upstream
-- name: koha
-  category: Other
-  confidence: 0.55
-  body:
-  - 'content="koha\ '
-  - name="koha_login_context
-  generated_by: temu-rules-upstream
-- name: fossbilling
-  category: Other
-  confidence: 0.55
-  body:
-  - fossbilling
-  generated_by: temu-rules-upstream
-- name: vlife
-  category: Other
-  confidence: 0.55
-  body:
-  - http\.title:"vlife
-  generated_by: temu-rules-upstream
-- name: wuzhicms
-  category: Other
-  confidence: 0.55
-  body:
-  - wuzhicms
-  - content="wuzhicms
-  - powered\ by\ wuzhicms
-  - <meta\ name="generator"\ content="wuzhicms
-  generated_by: temu-rules-upstream
-- name: gitblit
-  category: Other
-  confidence: 0.55
-  body:
-  - gitblit
-  generated_by: temu-rules-upstream
-- name: zoneminder
-  category: Other
-  confidence: 0.55
-  body:
-  - zoneminder\ login
-  generated_by: temu-rules-upstream
-- name: hospital_management_system
-  category: Other
-  confidence: 0.55
-  body:
-  - hospital\ management\ system
-  generated_by: temu-rules-upstream
-- name: pyload
-  category: Other
-  confidence: 0.55
-  body:
-  - pyload
-  generated_by: temu-rules-upstream
-- name: ech0
-  category: Other
-  confidence: 0.55
-  body:
-  - title:"ech0
-  generated_by: temu-rules-upstream
-- name: odoo
-  category: Other
-  confidence: 0.55
-  body:
-  - <script\ id="web\.layout\.odooscript
-  - odoo\.__session_info__\ =\ \{
-  generated_by: temu-rules-upstream
-- name: wp_go_maps
-  category: Other
-  confidence: 0.55
-  body:
-  - /wp\-content/plugins/duplicator
-  generated_by: temu-rules-upstream
-- name: download_manager
-  category: Other
-  confidence: 0.55
-  body:
-  - wp\-content/plugins/download\-manager/
+  - discuz!\ x5\.0
   generated_by: temu-rules-upstream
 - name: discuz
   category: Other
@@ -1832,156 +1700,214 @@
   - discuz_uid
   - portal\.php\?mod=
   generated_by: temu-rules-upstream
-- name: discuz_x
+- name: gitblit
   category: Other
   confidence: 0.55
   body:
-  - discuz!\ x5\.0
+  - gitblit
   generated_by: temu-rules-upstream
-- name: rsfiles
+- name: cs141
   category: Other
   confidence: 0.55
   body:
-  - com_rsfiles
+  - cs141
   generated_by: temu-rules-upstream
-- name: graylog
+- name: wpdiscuz
   category: Other
   confidence: 0.55
   body:
-  - org\.graylog\.plugins\.pipelineprocessor\.processorplugin
+  - /wp\-content/plugins/wpdiscuz
   generated_by: temu-rules-upstream
-- name: webmin
+- name: appwrite
   category: Other
   confidence: 0.55
   body:
-  - webmin
-  - session_login
-  - webmin\ server\ on
+  - <title>sign\ in\ \-\ appwrite</title>
   generated_by: temu-rules-upstream
-- name: open-xchange_appsuite
+- name: open_journal_systems
   category: Other
   confidence: 0.55
   body:
-  - appsuite
+  - pkp\-lib
   generated_by: temu-rules-upstream
-- name: open-xchange
+- name: wftpserver
   category: Other
   confidence: 0.55
   body:
-  - id="browserchecktext_id
-  - you\ need\ to\ enable\ javascript\ to\ access\ the\ open\-xchange\ server
+  - server:\ wing\ ftp\ server
   generated_by: temu-rules-upstream
-- name: netmaker
+- name: basic_pdu_firmware
   category: Other
   confidence: 0.55
   body:
-  - netmaker
+  - powertek
   generated_by: temu-rules-upstream
-- name: wp-automatic
+- name: phpmyfaq
   category: Other
   confidence: 0.55
   body:
-  - wp\-content/plugins/wp\-automatic/
+  - phpmyfaq
   generated_by: temu-rules-upstream
-- name: woocommerce_ultimate_gift_card
+- name: car_rental_management_system
   category: Other
   confidence: 0.55
   body:
-  - /wp\-content/plugins/woocommerce\-ultimate\-gift\-card
+  - car\ rental\ management\ system
   generated_by: temu-rules-upstream
-- name: simplehelp
+- name: metersphere
   category: Other
   confidence: 0.55
   body:
-  - simplehelp
+  - <title>metersphere
   generated_by: temu-rules-upstream
-- name: geoserver
+- name: zabbix
   category: Other
   confidence: 0.55
   body:
-  - /geoserver/
+  - zabbix\ sia
+  - zabbix
+  - images/general/zabbix\.ico
   generated_by: temu-rules-upstream
-- name: pypiserver
+- name: impresscms
   category: Other
   confidence: 0.55
   body:
-  - pypiserver
+  - impresscms
   generated_by: temu-rules-upstream
-- name: monitor
+- name: piwigo
   category: Other
   confidence: 0.55
   body:
-  - /monitor/application/views/themes/default/css/default/common\.css
+  - generator"\ content="piwigo
   generated_by: temu-rules-upstream
-- name: gnuboard5
+- name: elasticsearch
   category: Other
   confidence: 0.55
   body:
-  - gnuboard
-  - gnuboard5
+  - \ \ "tagline"\ :\ "you\ know,\ for\ search"
   generated_by: temu-rules-upstream
-- name: influxdata-influxdb
+- name: monsta-ftp
   category: Other
   confidence: 0.55
   body:
-  - class="influxdb\-version"
-  - influxdb
+  - monsta\ ftp
   generated_by: temu-rules-upstream
-- name: dedecms
+- name: minio
   category: Other
   confidence: 0.55
   body:
-  - /templets/default/style/dedecms\.css
-  - dedecms
-  - name="dede_fields
-  - name="dede_fieldshash
+  - symfony\ profiler
   generated_by: temu-rules-upstream
-- name: alibaba-fastjson
+- name: mjobtime
   category: Other
   confidence: 0.55
   body:
-  - fastjson
-  - version
-  - com\.alibaba\.fastjson\.jsonexception
-  - illegal\ identifier\ :\ @pos\ 1,\ json\ :\ \{@type:java\.lang\.autocloseable
+  - mjobtime
   generated_by: temu-rules-upstream
-- name: alibaba-nacos
+- name: django
   category: Other
   confidence: 0.55
   body:
-  - <title>nacos</title>
+  - django
   generated_by: temu-rules-upstream
-- name: extplorer
+- name: ipm-721s_firmware
   category: Other
   confidence: 0.55
   body:
-  - /extplorer\.ico
+  - amcrest
   generated_by: temu-rules-upstream
-- name: ai-copilot-content-generator
+- name: casbin
   category: Other
   confidence: 0.55
   body:
-  - /wp\-content/plugins/ai\-copilot\-content\-generator/
+  - <title>casdoor
+  - casdoor/manifest\.json
   generated_by: temu-rules-upstream
-- name: weiphp
+- name: aruba_instant
   category: Other
   confidence: 0.55
   body:
-  - /css/weiphp\.css
-  - content="weiphp
-  - 本系统由<a\ href="http://www\.weiphp\.cn"\ target="_blank">weiphp</a>强力驱动
+  - jscripts/third_party/highcharts\.src\.js
+  - jscripts/third_party/raphael\-treemap\.min\.js
   generated_by: temu-rules-upstream
-- name: netbox
+- name: opencti
   category: Other
   confidence: 0.55
   body:
-  - netbox\-community
+  - webpackjsonpopencti\-front
   generated_by: temu-rules-upstream
-- name: cyberpanel
+- name: acmailer,acmailer_db
   category: Other
   confidence: 0.55
   body:
-  - cyberpanel
+  - title="acmailer4\.0
+  generated_by: temu-rules-upstream
+- name: clickshare_cs-100_huddle_firmware
+  category: Other
+  confidence: 0.55
+  body:
+  - clicksharesession
+  generated_by: temu-rules-upstream
+- name: maxsite_cms
+  category: Other
+  confidence: 0.55
+  body:
+  - content="maxsite\ cms
+  generated_by: temu-rules-upstream
+- name: wp-booking-system
+  category: Other
+  confidence: 0.55
+  body:
+  - /wp\-content/plugins/wp\-booking\-system/
+  generated_by: temu-rules-upstream
+- name: officeconnect_1820_j9979a_firmware
+  category: Other
+  confidence: 0.55
+  body:
+  - hpe\ officeconnect
+  generated_by: temu-rules-upstream
+- name: argo_cd
+  category: Other
+  confidence: 0.55
+  body:
+  - argo\ cd
+  generated_by: temu-rules-upstream
+- name: rt-n16
+  category: Other
+  confidence: 0.55
+  body:
+  - rt\-n16
+  generated_by: temu-rules-upstream
+- name: lucee
+  category: Other
+  confidence: 0.55
+  body:
+  - by\ the\ lucee\ association\ switzerland</p>
+  - png"\ alt="lucee">
+  generated_by: temu-rules-upstream
+- name: icagenda
+  category: Other
+  confidence: 0.55
+  body:
+  - com_icagenda
+  generated_by: temu-rules-upstream
+- name: smart_s210_firmware
+  category: Other
+  confidence: 0.55
+  body:
+  - smart管理平台
+  generated_by: temu-rules-upstream
+- name: boa
+  category: Other
+  confidence: 0.55
+  body:
+  - server:\ boa/0\.94\.13
+  generated_by: temu-rules-upstream
+- name: flagr
+  category: Other
+  confidence: 0.55
+  body:
+  - flagr
   generated_by: temu-rules-upstream
 - name: ur51
   category: Other
@@ -1989,56 +1915,115 @@
   body:
   - rt_title
   generated_by: temu-rules-upstream
-- name: livezilla
+- name: opendcim
   category: Other
   confidence: 0.55
   body:
-  - content="livezilla
-  - href="http://www\.livezilla\.net"\ target="_blank
-  - livezilla\ is\ a\ registered\ trademark\ of\ livezilla\ gmbh</div>
-  - thank\ you\ for\ using\ livezilla!
+  - opendcim
   generated_by: temu-rules-upstream
-- name: rconfig
+- name: seafile
   category: Other
   confidence: 0.55
   body:
-  - rconfiglogo
+  - css/seahub\.min\.css
   generated_by: temu-rules-upstream
-- name: sangfor
+- name: e-cology
   category: Other
   confidence: 0.55
   body:
-  - ishighperformance\ :\ !!sfishighperformance
+  - ecology_jsessionid
   generated_by: temu-rules-upstream
-- name: cph2_echarge
+- name: e-office
   category: Other
   confidence: 0.55
   body:
-  - salia\ plcc
+  - eoffice
+  - weaver
   generated_by: temu-rules-upstream
-- name: bentoml
+- name: cmseasy
   category: Other
   confidence: 0.55
   body:
-  - bentoml
+  - content="cmseasy
   generated_by: temu-rules-upstream
-- name: cercopitheque
+- name: parse-server
   category: Other
   confidence: 0.55
   body:
-  - yeswiki
+  - parseserverversion
   generated_by: temu-rules-upstream
-- name: yeswiki
+- name: melis-platform
   category: Other
   confidence: 0.55
   body:
-  - yeswiki
+  - /melis/meliscms
+  - melisdemocms
   generated_by: temu-rules-upstream
-- name: spacelogic_c-bus_home_controller_firmware
+- name: netbox
   category: Other
   confidence: 0.55
   body:
-  - spacelogic\ c\-bus
+  - netbox\-community
+  generated_by: temu-rules-upstream
+- name: joomla
+  category: Other
+  confidence: 0.55
+  body:
+  - /media/system/js/core\.js
+  - /media/system/js/mootools\-core\.js
+  - <meta\ name="keywords"\ content="joomla,\ joomla"\ />
+  - content="joomla
+  generated_by: temu-rules-upstream
+- name: joomla!
+  category: Other
+  confidence: 0.55
+  body:
+  - joomla!\ \-\ open\ source\ content\ management
+  generated_by: temu-rules-upstream
+- name: blogengine.net
+  category: Other
+  confidence: 0.55
+  body:
+  - blogengine\.net
+  generated_by: temu-rules-upstream
+- name: phpipam
+  category: Other
+  confidence: 0.55
+  body:
+  - phpipam\ ip\ address\ management
+  generated_by: temu-rules-upstream
+- name: wpforms
+  category: Other
+  confidence: 0.55
+  body:
+  - wpforms\-uploader
+  generated_by: temu-rules-upstream
+- name: jetpack
+  category: Other
+  confidence: 0.55
+  body:
+  - /wp\-content/plugins/jetpack/
+  generated_by: temu-rules-upstream
+- name: thinkadmin
+  category: Other
+  confidence: 0.55
+  body:
+  - thinkadmin</title>
+  generated_by: temu-rules-upstream
+- name: vmware-esxi
+  category: Other
+  confidence: 0.55
+  body:
+  - <title\ ng\-bind="\$root\.title">
+  - ng\-app="esxuiapp"
+  generated_by: temu-rules-upstream
+- name: spring_cloud_config
+  category: Other
+  confidence: 0.55
+  body:
+  - label
+  - profiles
+  - propertysources
   generated_by: temu-rules-upstream
 - name: vmware-horizon
   category: Other
@@ -2053,20 +2038,58 @@
   body:
   - /airwatch/default\.aspx
   generated_by: temu-rules-upstream
-- name: spring_cloud_config
+- name: lansweeper
   category: Other
   confidence: 0.55
   body:
-  - label
-  - profiles
-  - propertysources
+  - <title>lansweeper\ \-\ login</title>
   generated_by: temu-rules-upstream
-- name: vmware-esxi
+- name: serv-u
   category: Other
   confidence: 0.55
   body:
-  - <title\ ng\-bind="\$root\.title">
-  - ng\-app="esxuiapp"
+  - serv\-u
+  generated_by: temu-rules-upstream
+- name: nocobase
+  category: Other
+  confidence: 0.55
+  body:
+  - __nocobase_public_path__
+  generated_by: temu-rules-upstream
+- name: metinfo
+  category: Other
+  confidence: 0.55
+  body:
+  - <div\ class="powered_by_metinfo"></div>
+  - <meta\ name="generator"\ content="metinfo
+  generated_by: temu-rules-upstream
+- name: xenapp
+  category: Other
+  confidence: 0.55
+  body:
+  - /citrix/xenapp
+  generated_by: temu-rules-upstream
+- name: citrix-netscaler
+  category: Other
+  confidence: 0.55
+  body:
+  - netscape/firefox/opera
+  - set\-cookie:\ citrix_ns_id
+  generated_by: temu-rules-upstream
+- name: storefront_server
+  category: Other
+  confidence: 0.55
+  body:
+  - /citrix/storeweb
+  generated_by: temu-rules-upstream
+- name: 74cms
+  category: Other
+  confidence: 0.55
+  body:
+  - /templates/default/css/common\.css
+  - content="74cms\.com
+  - content="74cms\.com"
+  - content="骑士cms
   generated_by: temu-rules-upstream
 - name: hp
   category: Other
@@ -2074,136 +2097,526 @@
   body:
   - hp\ 1820\-8g\ switch\ j9979a
   generated_by: temu-rules-upstream
-- name: wp-hotel-booking
+- name: eventin
   category: Other
   confidence: 0.55
   body:
-  - /wp\-content/plugins/wp\-hotel\-booking/
+  - /wp\-content/plugins/eventin
   generated_by: temu-rules-upstream
-- name: learnpress
+- name: motioneye
   category: Other
   confidence: 0.55
   body:
-  - /wp\-content/plugins/learnpress
+  - motioneye
   generated_by: temu-rules-upstream
-- name: artica_proxy
+- name: langflow
   category: Other
   confidence: 0.55
   body:
-  - artica
+  - langflow
   generated_by: temu-rules-upstream
-- name: rg-ew1200g_firmware
+- name: odoo
   category: Other
   confidence: 0.55
   body:
-  - app\.2fe6356cdd1ddd0eb8d6317d1a48d379\.css
+  - <script\ id="web\.layout\.odooscript
+  - odoo\.__session_info__\ =\ \{
   generated_by: temu-rules-upstream
-- name: docusaurus_plugin_content_gists
+- name: sv-cpt-mc310_firmware
   category: Other
   confidence: 0.55
   body:
-  - docusaurus
+  - solarview\ compact
   generated_by: temu-rules-upstream
-- name: terramaster_operating_system
+- name: solarview_compact
   category: Other
   confidence: 0.55
   body:
-  - terramaster
+  - solarview\ compact
   generated_by: temu-rules-upstream
-- name: tos
+- name: solarview_compact_firmware
   category: Other
   confidence: 0.55
   body:
-  - terramaster
+  - \ title="top
+  - solarview\ compact
+  - 'solarview\ compact"\ '
   generated_by: temu-rules-upstream
-- name: impresscms
+- name: uc_software
   category: Other
   confidence: 0.55
   body:
-  - impresscms
+  - polycom\ web\ configuration\ utility
   generated_by: temu-rules-upstream
-- name: kace_systems_management
+- name: jux_real_estate
   category: Other
   confidence: 0.55
   body:
-  - k1000\ logo
+  - joomlaux
   generated_by: temu-rules-upstream
-- name: mineadmin
+- name: zimaos
   category: Other
   confidence: 0.55
   body:
-  - mineadmin
+  - zimaos
   generated_by: temu-rules-upstream
-- name: wftpserver
+- name: visualcomposer
   category: Other
   confidence: 0.55
   body:
-  - server:\ wing\ ftp\ server
+  - /wp\-content/plugins/visualcomposer/
   generated_by: temu-rules-upstream
-- name: rg-ew1200g_firmware
+- name: quotes_llama
   category: Other
   confidence: 0.55
   body:
-  - app\.2fe6356cdd1ddd0eb8d6317d1a48d379\.css
+  - wp\-content/plugins/quotes\-llama/
   generated_by: temu-rules-upstream
-- name: rg-uac
+- name: rancher
   category: Other
   confidence: 0.55
   body:
-  - bbs\.ruijie\.com\.cn
-  - 锐捷统一上网行为管理与审计系统
-  - src='images/free_login\.png'
+  - <title>loading\&hellip;</title>
+  - ember\-basic\-dropdown\-wormhole
   generated_by: temu-rules-upstream
-- name: rg-nbs2009g-p, rg-nbs2009g-p_firmware
+- name: multiple_shipping_addresses_for_woocommerce
   category: Other
   confidence: 0.55
   body:
-  - ruijie\.com\.cn
+  - wp\-content/plugins/multiple\-shipping\-address\-woocommerce
   generated_by: temu-rules-upstream
-- name: rg-uac_firmware
+- name: adaptive-security-appliance-software
   category: Other
   confidence: 0.55
   body:
-  - get_verify_info
+  - /\+cscoe\+/logon\.html
   generated_by: temu-rules-upstream
-- name: oscommerce
+- name: unified_communications_manager
   category: Other
   confidence: 0.55
   body:
-  - oscommerce
-  - src="images/oscommerce\.png
-  - set\-cookie:\ oscsid=
+  - /ucmuser/
   generated_by: temu-rules-upstream
-- name: mobileiron
+- name: sg200-50_firmware
   category: Other
   confidence: 0.55
   body:
-  - mobileiron
+  - /config/log_off_page\.htm
   generated_by: temu-rules-upstream
-- name: mobileiron_sentry
+- name: rv160_firmware
   category: Other
   confidence: 0.55
   body:
-  - note:\ requires\ a\ local\ sentry\ administrative\ user
+  - cisco\ rv340
   generated_by: temu-rules-upstream
-- name: virtual traffic manager
+- name: obsidian
   category: Other
   confidence: 0.55
   body:
-  - apps/zxtm/login\.cgi
+  - plesk\ obsidian
   generated_by: temu-rules-upstream
-- name: connect_secure
+- name: smartstorenet
   category: Other
   confidence: 0.55
   body:
-  - welcome\.cgi\?p=logo
+  - content="smartstore
   generated_by: temu-rules-upstream
-- name: casbin
+- name: shopex
   category: Other
   confidence: 0.55
   body:
-  - <title>casdoor
-  - casdoor/manifest\.json
+  - '@author\ litie\[aita\]shopex\.cn'
+  - content="shopex
+  - http://www\.shopex\.cn'\ target='_blank'
+  generated_by: temu-rules-upstream
+- name: ninja_forms_file_uploads
+  category: Other
+  confidence: 0.55
+  body:
+  - nfpluginsettings\.js\?ver=
+  generated_by: temu-rules-upstream
+- name: wp-automatic
+  category: Other
+  confidence: 0.55
+  body:
+  - wp\-content/plugins/wp\-automatic/
+  generated_by: temu-rules-upstream
+- name: scoold
+  category: Other
+  confidence: 0.55
+  body:
+  - scoold\-wrapper
+  generated_by: temu-rules-upstream
+- name: page_builder_ck
+  category: Other
+  confidence: 0.55
+  body:
+  - com_pagebuilderck
+  generated_by: temu-rules-upstream
+- name: broken_link_notifier
+  category: Other
+  confidence: 0.55
+  body:
+  - blnotifier_front_end
+  generated_by: temu-rules-upstream
+- name: gameyfin
+  category: Other
+  confidence: 0.55
+  body:
+  - gameyfin
+  generated_by: temu-rules-upstream
+- name: facturascripts
+  category: Other
+  confidence: 0.55
+  body:
+  - facturascripts\ installer
+  generated_by: temu-rules-upstream
+- name: embedthis-appweb
+  category: Other
+  confidence: 0.55
+  body:
+  - server:\ embedthis\-appweb
+  generated_by: temu-rules-upstream
+- name: lin-cms-spring-boot
+  category: Other
+  confidence: 0.55
+  body:
+  - 心上无垢，林间有风
+  generated_by: temu-rules-upstream
+- name: hospital_management_system
+  category: Other
+  confidence: 0.55
+  body:
+  - hospital\ management\ system
+  generated_by: temu-rules-upstream
+- name: powerjob
+  category: Other
+  confidence: 0.55
+  body:
+  - <title>powerjob</title>
+  generated_by: temu-rules-upstream
+- name: ansibleforms
+  category: Other
+  confidence: 0.55
+  body:
+  - ansibleforms
+  generated_by: temu-rules-upstream
+- name: yui
+  category: Other
+  confidence: 0.55
+  body:
+  - bower_components/yui2/
+  generated_by: temu-rules-upstream
+- name: lodash
+  category: Other
+  confidence: 0.55
+  body:
+  - lodash
+  generated_by: temu-rules-upstream
+- name: mcp-atlassian
+  category: Other
+  confidence: 0.55
+  body:
+  - atlassian\ mcp
+  generated_by: temu-rules-upstream
+- name: mailinspector
+  category: Other
+  confidence: 0.55
+  body:
+  - mailinspector
+  generated_by: temu-rules-upstream
+- name: webmin
+  category: Other
+  confidence: 0.55
+  body:
+  - webmin
+  - session_login
+  - webmin\ server\ on
+  generated_by: temu-rules-upstream
+- name: jupyterhub
+  category: Other
+  confidence: 0.55
+  body:
+  - <title>jupyterhub</title>
+  generated_by: temu-rules-upstream
+- name: jupyterlab
+  category: Other
+  confidence: 0.55
+  body:
+  - <title>jupyterlab</title>
+  generated_by: temu-rules-upstream
+- name: notebook
+  category: Other
+  confidence: 0.55
+  body:
+  - <div\ id="ipython\-main\-app"\ class="container">
+  - <div\ id="ipython_notebook"\ class="nav\ navbar\-brand">
+  - <title>jupyter\ notebook</title>
+  generated_by: temu-rules-upstream
+- name: freescout
+  category: Other
+  confidence: 0.55
+  body:
+  - freescout
+  generated_by: temu-rules-upstream
+- name: navidrome
+  category: Other
+  confidence: 0.55
+  body:
+  - content="navidrome
+  generated_by: temu-rules-upstream
+- name: gnuboard
+  category: Other
+  confidence: 0.55
+  body:
+  - body:"gnuboard5
+  - gnuboard5
+  generated_by: temu-rules-upstream
+- name: laravel_filemanager
+  category: Other
+  confidence: 0.55
+  body:
+  - laravel\ filemanager
+  generated_by: temu-rules-upstream
+- name: praisonai
+  category: Other
+  confidence: 0.55
+  body:
+  - praisonai\ app
+  generated_by: temu-rules-upstream
+- name: tinyfilemanager
+  category: Other
+  confidence: 0.55
+  body:
+  - tiny\ file\ manager
+  generated_by: temu-rules-upstream
+- name: neo4j
+  category: Other
+  confidence: 0.55
+  body:
+  - content="neo4j
+  - ng\-show="neo4j\.enterpriseedition
+  - play\-topic="neo4j\-sync
+  - \{\{\ neo4j\.version\ \|\ neo4jdeveloperdoc\ \}\}/
+  generated_by: temu-rules-upstream
+- name: wp_go_maps
+  category: Other
+  confidence: 0.55
+  body:
+  - /wp\-content/plugins/duplicator
+  generated_by: temu-rules-upstream
+- name: supervisord
+  category: Other
+  confidence: 0.55
+  body:
+  - images/supervisor\.gif
+  generated_by: temu-rules-upstream
+- name: ip_camera
+  category: Other
+  confidence: 0.55
+  body:
+  - gw\ security
+  generated_by: temu-rules-upstream
+- name: gitea
+  category: Other
+  confidence: 0.55
+  body:
+  - content="gitea\ \-\ git\ with\ a\ cup\ of\ tea"
+  - set\-cookie:\ i_like_gitea
+  generated_by: temu-rules-upstream
+- name: rocket-lms
+  category: Other
+  confidence: 0.55
+  body:
+  - rocket\ lms
+  generated_by: temu-rules-upstream
+- name: wn530h4_firmware
+  category: Other
+  confidence: 0.55
+  body:
+  - wavlink
+  generated_by: temu-rules-upstream
+- name: wn535g3_firmware
+  category: Other
+  confidence: 0.55
+  body:
+  - wavlink
+  generated_by: temu-rules-upstream
+- name: wn530hg4_firmware
+  category: Other
+  confidence: 0.55
+  body:
+  - wavlink
+  generated_by: temu-rules-upstream
+- name: wl-wn533a8_firmware
+  category: Other
+  confidence: 0.55
+  body:
+  - wn533a8
+  generated_by: temu-rules-upstream
+- name: wn533a8_firmware
+  category: Other
+  confidence: 0.55
+  body:
+  - wavlink
+  generated_by: temu-rules-upstream
+- name: wl-wn531g3_firmware
+  category: Other
+  confidence: 0.55
+  body:
+  - ac1200
+  - wavlink
+  generated_by: temu-rules-upstream
+- name: wl-wn530hg4_firmware
+  category: Other
+  confidence: 0.55
+  body:
+  - wn530hg4
+  generated_by: temu-rules-upstream
+- name: wn579x3_firmware
+  category: Other
+  confidence: 0.55
+  body:
+  - wavlink
+  generated_by: temu-rules-upstream
+- name: changedetection
+  category: Other
+  confidence: 0.55
+  body:
+  - change\ detection
+  generated_by: temu-rules-upstream
+- name: fortios
+  category: Other
+  confidence: 0.55
+  body:
+  - /remote/login"\ "xxxxxxxx
+  generated_by: temu-rules-upstream
+- name: fortinet-fortimail
+  category: Other
+  confidence: 0.55
+  body:
+  - <script\ language=javascript>
+  - location="/m/webmail/";
+  generated_by: temu-rules-upstream
+- name: fortiwlm
+  category: Other
+  confidence: 0.55
+  body:
+  - fortiwlm
+  generated_by: temu-rules-upstream
+- name: fortiportal
+  category: Other
+  confidence: 0.55
+  body:
+  - fortiportal
+  generated_by: temu-rules-upstream
+- name: fortinet-fortigate
+  category: Other
+  confidence: 0.55
+  body:
+  - top\.location=window\.location;top\.location="/remote/login";
+  generated_by: temu-rules-upstream
+- name: usualtoolcms
+  category: Other
+  confidence: 0.55
+  body:
+  - usualtool
+  generated_by: temu-rules-upstream
+- name: websvn
+  category: Other
+  confidence: 0.55
+  body:
+  - websvn
+  - subversion
+  generated_by: temu-rules-upstream
+- name: qlik_sense
+  category: Other
+  confidence: 0.55
+  body:
+  - qlik
+  generated_by: temu-rules-upstream
+- name: site_management
+  category: Other
+  confidence: 0.55
+  body:
+  - /bitrix/
+  generated_by: temu-rules-upstream
+- name: gradio
+  category: Other
+  confidence: 0.55
+  body:
+  - gradio\-app
+  generated_by: temu-rules-upstream
+- name: remote_support
+  category: Other
+  confidence: 0.55
+  body:
+  - beyondtrust
+  generated_by: temu-rules-upstream
+- name: beyondtrust
+  category: Other
+  confidence: 0.55
+  body:
+  - beyondtrust
+  generated_by: temu-rules-upstream
+- name: compact_5500r_firmware
+  category: Other
+  confidence: 0.55
+  body:
+  - auerswald
+  generated_by: temu-rules-upstream
+- name: switchvox
+  category: Other
+  confidence: 0.55
+  body:
+  - switchvox
+  generated_by: temu-rules-upstream
+- name: geoserver
+  category: Other
+  confidence: 0.55
+  body:
+  - /org\.geoserver\.web\.geoserverbasepage/
+  - \\webapps\\geoserver
+  - class="geoserver\ lebeg
+  - geoserver
+  generated_by: temu-rules-upstream
+- name: gradio
+  category: Other
+  confidence: 0.55
+  body:
+  - __gradio_mode__
+  generated_by: temu-rules-upstream
+- name: reqlogic
+  category: Other
+  confidence: 0.55
+  body:
+  - reqlogic
+  generated_by: temu-rules-upstream
+- name: dash-uploader
+  category: Other
+  confidence: 0.55
+  body:
+  - _dash\-undo\-redo
+  generated_by: temu-rules-upstream
+- name: application_security_gateway
+  category: Other
+  confidence: 0.55
+  body:
+  - ns\-icg
+  generated_by: temu-rules-upstream
+- name: remote_management_card
+  category: Other
+  confidence: 0.55
+  body:
+  - cyberpower
+  - login_pass\.cgi
+  - login_pass\.cgi"\ http\.html:"cyberpower
+  generated_by: temu-rules-upstream
+- name: crushftp
+  category: Other
+  confidence: 0.55
+  body:
+  - crushftp
   generated_by: temu-rules-upstream
 - name: woocommerce-request-a-quote
   category: Other
@@ -2212,99 +2625,165 @@
   - /wp\-content/plugins/woocommerce\-request\-a\-quote/
   - woocommerce\-request\-a\-quote
   generated_by: temu-rules-upstream
-- name: aruba-instant-access-point
+- name: hospital_management_system
   category: Other
   confidence: 0.55
   body:
-  - jscripts/third_party/highcharts\.src\.js
-  - jscripts/third_party/raphael\-treemap\.min\.js
+  - hospital\ management\ system
   generated_by: temu-rules-upstream
-- name: navidrome
+- name: access_manager
   category: Other
   confidence: 0.55
   body:
-  - content="navidrome
+  - /oam/pages/css/login_page\.css
   generated_by: temu-rules-upstream
-- name: wechat
+- name: fusion_middleware
   category: Other
   confidence: 0.55
   body:
-  - wework_admin\.normal_layout
+  - weblogic\ application\ server
   generated_by: temu-rules-upstream
-- name: turbomeeting
+- name: iplanet_web_server
   category: Other
   confidence: 0.55
   body:
-  - turbomeeting
+  - oracle\-iplanet\-web\-server
   generated_by: temu-rules-upstream
-- name: piwigo
+- name: retail_xstore_office
   category: Other
   confidence: 0.55
   body:
-  - generator"\ content="piwigo
+  - xstoremgwt
   generated_by: temu-rules-upstream
-- name: smart_parking_management
+- name: kubepi
   category: Other
   confidence: 0.55
   body:
-  - /wpms/asset
+  - kubepi
   generated_by: temu-rules-upstream
-- name: wordpress_toolbar
+- name: dataease
   category: Other
   confidence: 0.55
   body:
-  - /wp\-content/plugins/wordpress\-toolbar/
+  - dataease
   generated_by: temu-rules-upstream
-- name: portainer
+- name: kubeoperator
   category: Other
   confidence: 0.55
   body:
-  - ng\-app="portainer"
+  - kubeoperator
   generated_by: temu-rules-upstream
-- name: minio
+- name: bentoml
   category: Other
   confidence: 0.55
   body:
-  - symfony\ profiler
+  - bentoml
   generated_by: temu-rules-upstream
-- name: liferay
+- name: netalertx
   category: Other
   confidence: 0.55
   body:
-  - liferay\.aui
-  - liferay\.currenturl
-  - powered\ by\ liferay\ portal
+  - netalert\ x
   generated_by: temu-rules-upstream
-- name: cmseasy
+- name: o2oa
   category: Other
   confidence: 0.55
   body:
-  - content="cmseasy
+  - title=="o2oa
   generated_by: temu-rules-upstream
-- name: blogengine.net
+- name: mage-eventpress
   category: Other
   confidence: 0.55
   body:
-  - blogengine\.net
+  - /wp\-content/plugins/mage\-eventpress/
   generated_by: temu-rules-upstream
-- name: cloudlog
+- name: cdg
   category: Other
   confidence: 0.55
   body:
-  - login\ \-\ cloudlog
+  - esafenet
   generated_by: temu-rules-upstream
-- name: ckan
+- name: ap_pagebuilder
   category: Other
   confidence: 0.55
   body:
-  - ckan\ 2\.8\.2"
-  - html:"ckan\ 2\.3
+  - appagebuilder
+  - modules/appagebuilder
   generated_by: temu-rules-upstream
-- name: etl3100
+- name: quantum_security_gateway
   category: Other
   confidence: 0.55
   body:
-  - etl3100
+  - check\ point\ ssl\ network
+  generated_by: temu-rules-upstream
+- name: torchserve
+  category: Other
+  confidence: 0.55
+  body:
+  - requested\ method\ is\ not\ allowed,\ please\ refer\ to\ api\ document
+  generated_by: temu-rules-upstream
+- name: r-seenet
+  category: Other
+  confidence: 0.55
+  body:
+  - r\-seenet
+  generated_by: temu-rules-upstream
+- name: gravityforms
+  category: Other
+  confidence: 0.55
+  body:
+  - gform_wrapper
+  - gravityforms
+  - gravityforms"\ http\.html:"gform_wrapper
+  generated_by: temu-rules-upstream
+- name: phpldapadmin
+  category: Other
+  confidence: 0.55
+  body:
+  - phpldapadmin
+  generated_by: temu-rules-upstream
+- name: gotenberg
+  category: Other
+  confidence: 0.55
+  body:
+  - gotenberg
+  generated_by: temu-rules-upstream
+- name: saltstack
+  category: Other
+  confidence: 0.55
+  body:
+  - <title>saltstack</title>
+  - server:\ tornadoserver
+  generated_by: temu-rules-upstream
+- name: pmb
+  category: Other
+  confidence: 0.55
+  body:
+  - pmb\ group
+  generated_by: temu-rules-upstream
+- name: ispconfig
+  category: Other
+  confidence: 0.55
+  body:
+  - powered\ by\ <a\ href="http://www\.ispconfig\.org
+  generated_by: temu-rules-upstream
+- name: netweaver_development_infrastructure
+  category: Other
+  confidence: 0.55
+  body:
+  - sap\ netweaver
+  generated_by: temu-rules-upstream
+- name: sap_web_application_server
+  category: Other
+  confidence: 0.55
+  body:
+  - sap\ business\ server\ pages\ team
+  generated_by: temu-rules-upstream
+- name: jsherp
+  category: Other
+  confidence: 0.55
+  body:
+  - jsherp\-boot
   generated_by: temu-rules-upstream
 - name: kkfileview
   category: Other
@@ -2312,178 +2791,76 @@
   body:
   - kkfileview
   generated_by: temu-rules-upstream
-- name: syncserver_s650
+- name: thinkcmf
   category: Other
   confidence: 0.55
   body:
-  - symmetricom\ syncserver
+  - <a\ title="官方网站"\ href="http://www\.thinkcmf\.com">thinkcmf</a>
+  - content="thinkcmf
+  - made\ by\ <a\ href="http://www\.thinkcmf\.com"\ target="_blank">thinkcmf</a>
+  - x\-powered\-by:\ thinkcmf
   generated_by: temu-rules-upstream
-- name: tautulli
+- name: icc
   category: Other
   confidence: 0.55
   body:
-  - alt="plexpy"
+  - \*客户端会小于800\*
   generated_by: temu-rules-upstream
-- name: reliance
+- name: nuxt
   category: Other
   confidence: 0.55
   body:
-  - etq\ reliance
+  - __nuxt
   generated_by: temu-rules-upstream
-- name: help_scout
+- name: framework
   category: Other
   confidence: 0.55
   body:
-  - /wp\-content/plugins/woocommerce\-help\-scout
+  - __nuxt
+  - buildassetsdir
+  - buildassetsdir"\ "nuxt
   generated_by: temu-rules-upstream
-- name: ipm-721s_firmware
+- name: roxy-wi
   category: Other
   confidence: 0.55
   body:
-  - amcrest
+  - roxy\-wi
   generated_by: temu-rules-upstream
-- name: adminer
+- name: enterprise,proton
   category: Other
   confidence: 0.55
   body:
-  - ://www\.adminer\.org/'\ target="_blank"\ rel="noreferrer
+  - optergy
   generated_by: temu-rules-upstream
-- name: argo_cd
+- name: crywolf
   category: Other
   confidence: 0.55
   body:
-  - argo\ cd
+  - false\ alarm\ reduction\ website
   generated_by: temu-rules-upstream
-- name: pcoweb_card_firmware
+- name: passwordpusher
   category: Other
   confidence: 0.55
   body:
-  - pcoweb
+  - password\ pusher
   generated_by: temu-rules-upstream
-- name: atutor
+- name: eyesofnetwork
   category: Other
   confidence: 0.55
   body:
-  - atutor
+  - eyesofnetwork
   generated_by: temu-rules-upstream
-- name: xoops
+- name: open_edx
   category: Other
   confidence: 0.55
   body:
-  - include/xoops\.js
+  - open\ edx
   generated_by: temu-rules-upstream
-- name: bookly-responsive-appointment-booking-tool
+- name: controller
   category: Other
   confidence: 0.55
   body:
-  - booklyl10nglobal
-  generated_by: temu-rules-upstream
-- name: tag-groups
-  category: Other
-  confidence: 0.55
-  body:
-  - /wp\-content/plugins/tag\-groups/
-  generated_by: temu-rules-upstream
-- name: gradio
-  category: Other
-  confidence: 0.55
-  body:
-  - __gradio_mode__
-  generated_by: temu-rules-upstream
-- name: bagisto
-  category: Other
-  confidence: 0.55
-  body:
-  - bagisto
-  generated_by: temu-rules-upstream
-- name: esm.sh
-  category: Other
-  confidence: 0.55
-  body:
-  - esm\.sh
-  generated_by: temu-rules-upstream
-- name: phpmyfaq
-  category: Other
-  confidence: 0.55
-  body:
-  - phpmyfaq
-  generated_by: temu-rules-upstream
-- name: siteengine
-  category: Other
-  confidence: 0.55
-  body:
-  - siteengine
-  generated_by: temu-rules-upstream
-- name: jux_real_estate
-  category: Other
-  confidence: 0.55
-  body:
-  - joomlaux
-  generated_by: temu-rules-upstream
-- name: thinkadmin
-  category: Other
-  confidence: 0.55
-  body:
-  - thinkadmin</title>
-  generated_by: temu-rules-upstream
-- name: obsidian
-  category: Other
-  confidence: 0.55
-  body:
-  - plesk\ obsidian
-  generated_by: temu-rules-upstream
-- name: osticket
-  category: Other
-  confidence: 0.55
-  body:
-  - href="http://osticket\.com">osticket\.com
-  generated_by: temu-rules-upstream
-- name: onedev
-  category: Other
-  confidence: 0.55
-  body:
-  - onedev\.io
-  generated_by: temu-rules-upstream
-- name: pfsense
-  category: Other
-  confidence: 0.55
-  body:
-  - <h4>login\ to\ pfsense</h4>
-  - rubicon\ communications,\ llc\ \(netgate\)
-  generated_by: temu-rules-upstream
-- name: pfblockerng
-  category: Other
-  confidence: 0.55
-  body:
-  - pfblockerng
-  generated_by: temu-rules-upstream
-- name: forms
-  category: Other
-  confidence: 0.55
-  body:
-  - com_baforms
-  generated_by: temu-rules-upstream
-- name: footprints
-  category: Other
-  confidence: 0.55
-  body:
-  - /footprints/servicedesk/
-  generated_by: temu-rules-upstream
-- name: grafana
-  category: Other
-  confidence: 0.55
-  body:
-  - grafana_icon\.svg
-  - login
-  - grafana\-app
-  - 'window\.grafanabootdata\ =\ '
-  generated_by: temu-rules-upstream
-- name: acymailing
-  category: Other
-  confidence: 0.55
-  body:
-  - acymailing
-  - com_acym
+  - aquatronica
   generated_by: temu-rules-upstream
 - name: phpcollab
   category: Other
@@ -2492,85 +2869,360 @@
   - <!\-\-\ powered\ by\ phpcollab
   - content='phpcollab
   generated_by: temu-rules-upstream
-- name: appcms
+- name: smart_parking_management
   category: Other
   confidence: 0.55
   body:
-  - powerd\ by\ appcms
+  - /wpms/asset
   generated_by: temu-rules-upstream
-- name: ruckus_vriot
+- name: gotenberg
   category: Other
   confidence: 0.55
   body:
-  - riot\ controller
+  - gotenberg
   generated_by: temu-rules-upstream
-- name: reqlogic
+- name: profilepress
   category: Other
   confidence: 0.55
   body:
-  - reqlogic
+  - /wp\-content/plugins/profilepress
   generated_by: temu-rules-upstream
-- name: fudforum
+- name: changedetection.io
   category: Other
   confidence: 0.55
   body:
-  - powered\ by:\ fudforum
+  - changedetection\.io
   generated_by: temu-rules-upstream
-- name: flatpress
+- name: flaresolverr
   category: Other
   confidence: 0.55
   body:
-  - flatpress
+  - flaresolverr\ is\ ready
   generated_by: temu-rules-upstream
-- name: immich
+- name: rosariosis
   category: Other
   confidence: 0.55
   body:
-  - immich
-  - /_app/immutable
+  - rosariosis
   generated_by: temu-rules-upstream
-- name: ipeakcms
+- name: contact-form-generator
   category: Other
   confidence: 0.55
   body:
-  - ipeak
+  - /wp\-content/plugins/contact\-form\-generator
   generated_by: temu-rules-upstream
-- name: easy_forms_for_mailchimp
+- name: zimaos
   category: Other
   confidence: 0.55
   body:
-  - wp\-content/plugins/yikes\-inc\-easy\-mailchimp\-extender/
+  - zimaos
   generated_by: temu-rules-upstream
-- name: genieacs
+- name: eshop_-_ecommerce_-_store_website
   category: Other
   confidence: 0.55
   body:
-  - genieacs
+  - eshop\ \-\ multipurpose\ ecommerce
   generated_by: temu-rules-upstream
-- name: metabase
+- name: logstash
   category: Other
   confidence: 0.55
   body:
-  - _metabasebootstrap
-  - _metabaselocalization
+  - logstash
   generated_by: temu-rules-upstream
-- name: usualtoolcms
+- name: elastic
   category: Other
   confidence: 0.55
   body:
-  - usualtool
+  - <title>elastic</title>
+  - 'kbn\-license\-sig:'
   generated_by: temu-rules-upstream
-- name: kubeflow
+- name: elasticsearch
   category: Other
   confidence: 0.55
   body:
-  - content="kubeflow\ central\ dashboard"
+  - index_not_found_exception
   generated_by: temu-rules-upstream
-- name: edusoho
+- name: gitlab-mcp
   category: Other
   confidence: 0.55
   body:
-  - powered\ by\ <a\ href="http://www\.edusoho\.com/"\ target="_blank">edusoho
+  - transport:sse
+  generated_by: temu-rules-upstream
+- name: bookly-responsive-appointment-booking-tool
+  category: Other
+  confidence: 0.55
+  body:
+  - booklyl10nglobal
+  generated_by: temu-rules-upstream
+- name: dzzoffice
+  category: Other
+  confidence: 0.55
+  body:
+  - dzzoffice
+  generated_by: temu-rules-upstream
+- name: tlr-2005ksh_firmware
+  category: Other
+  confidence: 0.55
+  body:
+  - tlr\-2005ksh
+  generated_by: temu-rules-upstream
+- name: tlr-2005ksh
+  category: Other
+  confidence: 0.55
+  body:
+  - tlr\-2005ksh
+  generated_by: temu-rules-upstream
+- name: sdt-cs3b1
+  category: Other
+  confidence: 0.55
+  body:
+  - sdt\-cw3b1
+  generated_by: temu-rules-upstream
+- name: spacelogic_c-bus_home_controller_firmware
+  category: Other
+  confidence: 0.55
+  body:
+  - spacelogic\ c\-bus
+  generated_by: temu-rules-upstream
+- name: b2evolution
+  category: Other
+  confidence: 0.55
+  body:
+  - /powered\-by\-b2evolution\-150t\.gif
+  - content="b2evolution
+  - powered\ by\ b2evolution
+  generated_by: temu-rules-upstream
+- name: apache-ofbiz
+  category: Other
+  confidence: 0.55
+  body:
+  - <span>powered\ by\ ofbiz</span>
+  generated_by: temu-rules-upstream
+- name: nifi
+  category: Other
+  confidence: 0.55
+  body:
+  - <a\ href="/nifi/">/nifi</a>
+  generated_by: temu-rules-upstream
+- name: apache-skywalking
+  category: Other
+  confidence: 0.55
+  body:
+  - sorry\ but\ skywalking\ doesn't\ work
+  generated_by: temu-rules-upstream
+- name: apache-hadoop
+  category: Other
+  confidence: 0.55
+  body:
+  - /static/hadoop\-st\.png
+  - parsehadoopprogress
+  generated_by: temu-rules-upstream
+- name: apache-unomi
+  category: Other
+  confidence: 0.55
+  body:
+  - logo\ apache\ unomi
+  generated_by: temu-rules-upstream
+- name: apache-ambari
+  category: Other
+  confidence: 0.55
+  body:
+  - '"/licenses/notice\.txt"'
+  - <title>ambari</title>
+  generated_by: temu-rules-upstream
+- name: apache-solr
+  category: Other
+  confidence: 0.55
+  body:
+  - location:\ /solr/
+  generated_by: temu-rules-upstream
+- name: apache-cocoon
+  category: Other
+  confidence: 0.55
+  body:
+  - 'x\-cocoon\-version:'
+  generated_by: temu-rules-upstream
+- name: apache-flink
+  category: Other
+  confidence: 0.55
+  body:
+  - <img\ alt="apache\ flink\ dashboard"\ src="images/flink\-logo\.png
+  - <title>apache\ flink\ web\ dashboard</title>
+  generated_by: temu-rules-upstream
+- name: apache-tomcat
+  category: Other
+  confidence: 0.55
+  body:
+  - /manager/html
+  - /manager/status
+  - <h3>apache\ tomcat
+  - <title>apache\ tomcat/
+  generated_by: temu-rules-upstream
+- name: apache-airflow
+  category: Other
+  confidence: 0.55
+  body:
+  - <span>airflow</span>
+  - airflow
+  - src="/static/pin_100\.png"
+  generated_by: temu-rules-upstream
+- name: apache-superset
+  category: Other
+  confidence: 0.55
+  body:
+  - <title>superset</title>
+  - src="/static/assets/images/superset\-logo\-
+  generated_by: temu-rules-upstream
+- name: apache-druid
+  category: Other
+  confidence: 0.55
+  body:
+  - content="apache\ druid\ console"
+  generated_by: temu-rules-upstream
+- name: apache-kylin
+  category: Other
+  confidence: 0.55
+  body:
+  - <meta\ http\-equiv="refresh"\ content="1;url=kylin">
+  - href="/kylin/"
+  generated_by: temu-rules-upstream
+- name: apache-shiro
+  category: Other
+  confidence: 0.55
+  body:
+  - </i>\ shiro</li>
+  - set\-cookie:\ rememberme
+  generated_by: temu-rules-upstream
+- name: apache-struts
+  category: Other
+  confidence: 0.55
+  body:
+  - <form\ action="/login\.action"\ method="post
+  - <form\ action="login\.action"\ method="post
+  - ="struts\.token\.name"
+  - content="struts2\ showcase\ for\ apache\ struts\ project"
+  generated_by: temu-rules-upstream
+- name: spark
+  category: Other
+  confidence: 0.55
+  body:
+  - /apps/imt/html/
+  generated_by: temu-rules-upstream
+- name: apache-http
+  category: Other
+  confidence: 0.55
+  body:
+  - server:\ apache
+  generated_by: temu-rules-upstream
+- name: apache-apisix
+  category: Other
+  confidence: 0.55
+  body:
+  - content\-type:\ text/plain
+  - server:\ nginx
+  - content\-type:\ text/plain
+  - server:\ openresty
+  generated_by: temu-rules-upstream
+- name: apache-activemq
+  category: Other
+  confidence: 0.55
+  body:
+  - <title>apache\ activemq</title>
+  generated_by: temu-rules-upstream
+- name: ranger
+  category: Other
+  confidence: 0.55
+  body:
+  - <img\ src="images/ranger_logo\.png"\ alt="ranger\ logo">
+  generated_by: temu-rules-upstream
+- name: kafka_connect
+  category: Other
+  confidence: 0.55
+  body:
+  - apache\ druid
+  generated_by: temu-rules-upstream
+- name: apache-axis2
+  category: Other
+  confidence: 0.55
+  body:
+  - axis2\-admin
+  - axis2\-web
+  generated_by: temu-rules-upstream
+- name: apache-couchdb
+  category: Other
+  confidence: 0.55
+  body:
+  - server:\ couchdb
+  - x\-couchdb\-body\-time:\ 0
+  generated_by: temu-rules-upstream
+- name: apache-mesos
+  category: Other
+  confidence: 0.55
+  body:
+  - <img\ src="/static/img/mesos_logo\.png"\ alt="apache\ mesos">
+  generated_by: temu-rules-upstream
+- name: karaf
+  category: Other
+  confidence: 0.55
+  body:
+  - realm="karaf
+  generated_by: temu-rules-upstream
+- name: apache-dubbo
+  category: Other
+  confidence: 0.55
+  body:
+  - www\-authenticate:\ basic\ realm="dubbo"
+  generated_by: temu-rules-upstream
+- name: onedev
+  category: Other
+  confidence: 0.55
+  body:
+  - onedev\.io
+  generated_by: temu-rules-upstream
+- name: moostore
+  category: Other
+  confidence: 0.55
+  body:
+  - moosocial
+  generated_by: temu-rules-upstream
+- name: qualitor
+  category: Other
+  confidence: 0.55
+  body:
+  - qualitor
+  generated_by: temu-rules-upstream
+- name: php-login-system
+  category: Other
+  confidence: 0.55
+  body:
+  - klik_loginsystem
+  generated_by: temu-rules-upstream
+- name: icinga
+  category: Other
+  confidence: 0.55
+  body:
+  - <title>icinga\ web\ 2\ login</title>
+  - mask\-icon"\ href="/icingaweb2/img/website\-icon\.svg"\ color=
+  generated_by: temu-rules-upstream
+- name: rg-ew1200g_firmware
+  category: Other
+  confidence: 0.55
+  body:
+  - app\.2fe6356cdd1ddd0eb8d6317d1a48d379\.css
+  generated_by: temu-rules-upstream
+- name: aruba-instant-access-point
+  category: Other
+  confidence: 0.55
+  body:
+  - jscripts/third_party/highcharts\.src\.js
+  - jscripts/third_party/raphael\-treemap\.min\.js
+  generated_by: temu-rules-upstream
+- name: casdoor
+  category: Other
+  confidence: 0.55
+  body:
+  - <title>casdoor
+  - casdoor/manifest\.json
   generated_by: temu-rules-upstream
 - name: xwiki-platform
   category: Other
@@ -2590,289 +3242,30 @@
   body:
   - data\-xwiki\-reference=
   generated_by: temu-rules-upstream
-- name: jfrog
+- name: better-search
   category: Other
   confidence: 0.55
   body:
-  - <meta\ http\-equiv="refresh"\ content="0;url=/artifactory">
-  - src=/ui/img/jfrog
-  - location:\ /artifactory/
+  - /wp\-content/plugins/better\-search/
   generated_by: temu-rules-upstream
-- name: invoiceplane
+- name: opencms
   category: Other
   confidence: 0.55
   body:
-  - invoiceplane
+  - /opencms/
   generated_by: temu-rules-upstream
-- name: aura_utility_services
+- name: spamtitan
   category: Other
   confidence: 0.55
   body:
-  - avaya\ aura
+  - <table\ class="lhead"><tr><td\ class="img"><img\ src="/imgs/logo\.gif"\ alt="spamtitan\
+    logo"></td></tr></table></div>
   generated_by: temu-rules-upstream
-- name: avaya
+- name: request-baskets
   category: Other
   confidence: 0.55
   body:
-  - avaya\ j179\ phone
-  generated_by: temu-rules-upstream
-- name: aura_device_services
-  category: Other
-  confidence: 0.55
-  body:
-  - avaya\ aura
-  - nbsp;utility\ services
-  generated_by: temu-rules-upstream
-- name: traccar
-  category: Other
-  confidence: 0.55
-  body:
-  - traccar
-  generated_by: temu-rules-upstream
-- name: processwire
-  category: Other
-  confidence: 0.55
-  body:
-  - processwire
-  generated_by: temu-rules-upstream
-- name: traggo
-  category: Other
-  confidence: 0.55
-  body:
-  - traggo
-  generated_by: temu-rules-upstream
-- name: application_security_gateway
-  category: Other
-  confidence: 0.55
-  body:
-  - ns\-icg
-  generated_by: temu-rules-upstream
-- name: 74cms
-  category: Other
-  confidence: 0.55
-  body:
-  - /templates/default/css/common\.css
-  - content="74cms\.com
-  - content="74cms\.com"
-  - content="骑士cms
-  generated_by: temu-rules-upstream
-- name: eyoucms
-  category: Other
-  confidence: 0.55
-  body:
-  - name="generator"\ content="eyoucms
-  - powered\ by\ eyoucms
-  generated_by: temu-rules-upstream
-- name: core-geonetwork
-  category: Other
-  confidence: 0.55
-  body:
-  - /srv/eng/
-  generated_by: temu-rules-upstream
-- name: woocommerce-delivery-notes
-  category: Other
-  confidence: 0.55
-  body:
-  - wp\-content/plugins/woocommerce\-delivery\-notes/
-  generated_by: temu-rules-upstream
-- name: craftercms
-  category: Other
-  confidence: 0.55
-  body:
-  - craftercms
-  generated_by: temu-rules-upstream
-- name: gocd
-  category: Other
-  confidence: 0.55
-  body:
-  - gocd\ version
-  generated_by: temu-rules-upstream
-- name: maxsite_cms
-  category: Other
-  confidence: 0.55
-  body:
-  - content="maxsite\ cms
-  generated_by: temu-rules-upstream
-- name: tinyfilemanager
-  category: Other
-  confidence: 0.55
-  body:
-  - tiny\ file\ manager
-  generated_by: temu-rules-upstream
-- name: apeosport-v_c3375
-  category: Other
-  confidence: 0.55
-  body:
-  - docucentre
-  - prop\.htm
-  generated_by: temu-rules-upstream
-- name: xc1000_firmware
-  category: Other
-  confidence: 0.55
-  body:
-  - cassia\ bluetooth\ gateway\ management\ platform
-  generated_by: temu-rules-upstream
-- name: processplus
-  category: Other
-  confidence: 0.55
-  body:
-  - process\ plus
-  generated_by: temu-rules-upstream
-- name: antd-admin
-  category: Other
-  confidence: 0.55
-  body:
-  - '//!\ umi\ version:'
-  - /@@/devscripts\.js
-  - /umi\.js
-  - /umi\.js"\ html:"@@/devscripts\.js
-  generated_by: temu-rules-upstream
-- name: mastodon
-  category: Other
-  confidence: 0.55
-  body:
-  - mastodon\-
-  generated_by: temu-rules-upstream
-- name: crushftp
-  category: Other
-  confidence: 0.55
-  body:
-  - crushftp
-  generated_by: temu-rules-upstream
-- name: DSE855
-  category: Other
-  confidence: 0.55
-  body:
-  - deep\ sea\ electronics
-  generated_by: temu-rules-upstream
-- name: wpzoom-portfolio
-  category: Other
-  confidence: 0.55
-  body:
-  - /wp\-content/plugins/wpzoom\-portfolio
-  generated_by: temu-rules-upstream
-- name: truebooker-appointment-booking
-  category: Other
-  confidence: 0.55
-  body:
-  - truebooker\-appointment\-booking
-  generated_by: temu-rules-upstream
-- name: phpipam
-  category: Other
-  confidence: 0.55
-  body:
-  - phpipam\ ip\ address\ management
-  generated_by: temu-rules-upstream
-- name: phpok
-  category: Other
-  confidence: 0.55
-  body:
-  - <meta\ name="author"\ content="phpok,
-  generated_by: temu-rules-upstream
-- name: self_service
-  category: Other
-  confidence: 0.55
-  body:
-  - jamf
-  generated_by: temu-rules-upstream
-- name: ips_community_suite
-  category: Other
-  confidence: 0.55
-  body:
-  - invision\ community
-  generated_by: temu-rules-upstream
-- name: jquery-bbq
-  category: Other
-  confidence: 0.55
-  body:
-  - odoo
-  generated_by: temu-rules-upstream
-- name: yealink
-  category: Other
-  confidence: 0.55
-  body:
-  - yealink\ ctp18
-  generated_by: temu-rules-upstream
-- name: wp-google-map-gold
-  category: Other
-  confidence: 0.55
-  body:
-  - /wp\-content/plugins/wp\-maps\-pro/
-  generated_by: temu-rules-upstream
-- name: kubeoperator
-  category: Other
-  confidence: 0.55
-  body:
-  - kubeoperator
-  generated_by: temu-rules-upstream
-- name: kubepi
-  category: Other
-  confidence: 0.55
-  body:
-  - kubepi
-  generated_by: temu-rules-upstream
-- name: dataease
-  category: Other
-  confidence: 0.55
-  body:
-  - dataease
-  generated_by: temu-rules-upstream
-- name: smart_s210_firmware
-  category: Other
-  confidence: 0.55
-  body:
-  - smart管理平台
-  generated_by: temu-rules-upstream
-- name: jbpm
-  category: Other
-  confidence: 0.55
-  body:
-  - jbossws
-  generated_by: temu-rules-upstream
-- name: keycloak
-  category: Other
-  confidence: 0.55
-  body:
-  - keycloak
-  generated_by: temu-rules-upstream
-- name: elasticsearch
-  category: Other
-  confidence: 0.55
-  body:
-  - \ \ "tagline"\ :\ "you\ know,\ for\ search"
-  generated_by: temu-rules-upstream
-- name: motioneye
-  category: Other
-  confidence: 0.55
-  body:
-  - motioneye
-  generated_by: temu-rules-upstream
-- name: calibre
-  category: Other
-  confidence: 0.55
-  body:
-  - calibre
-  - server:\ calibre
-  generated_by: temu-rules-upstream
-- name: horde
-  category: Other
-  confidence: 0.55
-  body:
-  - _sethordetitle
-  - imp:\ copyright\ 2001\-2009\ the\ horde\ project
-  generated_by: temu-rules-upstream
-- name: windmill
-  category: Other
-  confidence: 0.55
-  body:
-  - windmill"\ http\.html:"svelte\-global\-loader
-  generated_by: temu-rules-upstream
-- name: melis-platform
-  category: Other
-  confidence: 0.55
-  body:
-  - /melis/meliscms
-  - melisdemocms
+  - request\-baskets
   generated_by: temu-rules-upstream
 - name: bl-wr9000_firmware
   category: Other
@@ -2882,274 +3275,117 @@
   - lb\-link
   - lb\-link"\ "goahead\-webs
   generated_by: temu-rules-upstream
-- name: crmeb
+- name: contao
   category: Other
   confidence: 0.55
   body:
-  - <h1>crmeb</h1>
+  - contao\ open\ source\ cms
   generated_by: temu-rules-upstream
-- name: voyager
+- name: sitecore.net
   category: Other
   confidence: 0.55
   body:
-  - voyager\-assets
+  - sitecore
   generated_by: temu-rules-upstream
-- name: gitlab
+- name: sitecore
   category: Other
   confidence: 0.55
   body:
-  - navbar\-gitlab
-  - search\ gitlab
-  - <a\ href="https://about\.gitlab\.com/">about\ gitlab
-  - class="col\-sm\-7\ brand\-holder\ pull\-left"
+  - alt="sitecore"\ id="sclogo"\ />
+  - title="sitecore\ documentation\ site">
   generated_by: temu-rules-upstream
-- name: xenapp
+- name: duomicms
   category: Other
   confidence: 0.55
   body:
-  - /citrix/xenapp
+  - power\ by\ duomicms
   generated_by: temu-rules-upstream
-- name: storefront_server
+- name: cloudtest
   category: Other
   confidence: 0.55
   body:
-  - /citrix/storeweb
+  - akamai\ cloudtest
   generated_by: temu-rules-upstream
-- name: citrix-netscaler
+- name: openemr
   category: Other
   confidence: 0.55
   body:
-  - netscape/firefox/opera
-  - set\-cookie:\ citrix_ns_id
+  - openemr
   generated_by: temu-rules-upstream
-- name: metersphere
+- name: piotnetforms-pro
   category: Other
   confidence: 0.55
   body:
-  - <title>metersphere
+  - piotnetforms
   generated_by: temu-rules-upstream
-- name: site-reviews
+- name: kan
   category: Other
   confidence: 0.55
   body:
-  - glsr\-form
-  - site\-reviews
+  - _next
   generated_by: temu-rules-upstream
-- name: crestron-device
+- name: cloudlog
   category: Other
   confidence: 0.55
   body:
-  - airmedia
+  - login\ \-\ cloudlog
   generated_by: temu-rules-upstream
-- name: prometheus
+- name: custom_product_designer
   category: Other
   confidence: 0.55
   body:
-  - <title>prometheus
+  - prestashop
+  - tshirtecommerce
   generated_by: temu-rules-upstream
-- name: post-timeline
+- name: prestashop
   category: Other
   confidence: 0.55
   body:
-  - wp\-content/plugins/post\-timeline/
+  - prestashop
+  - tshirtecommerce
   generated_by: temu-rules-upstream
-- name: qualitor
+- name: phpmyadmin
   category: Other
   confidence: 0.55
   body:
-  - qualitor
+  - href="phpmyadmin\.css\.php
+  - pma_password
+  - set\-cookie:\ phpmyadmin=
+  - set\-cookie:\ pma_lang=
   generated_by: temu-rules-upstream
-- name: dgraph
+- name: aurall_rec_monitor
   category: Other
   confidence: 0.55
   body:
-  - dgraph
+  - aurall
   generated_by: temu-rules-upstream
-- name: yui
+- name: fieldpopupnewsletter
   category: Other
   confidence: 0.55
   body:
-  - bower_components/yui2/
+  - fieldpopupnewsletter
   generated_by: temu-rules-upstream
-- name: testrail
+- name: tlp-team
   category: Other
   confidence: 0.55
   body:
-  - testrail
+  - rt\-team\-container
+  - tlp\-team
   generated_by: temu-rules-upstream
-- name: emby
+- name: phpbb
   category: Other
   confidence: 0.55
   body:
-  - content="emby\ server"
+  - phpbb
+  - phpbb\ group"\ />
+  - http://www\.longluntan\.com/zh/phpbb/
+  - start\ quick\ hack\ \-\ phpbb\ statistics\ mod
   generated_by: temu-rules-upstream
-- name: newsticker
+- name: blogengine.net
   category: Other
   confidence: 0.55
   body:
-  - news\-ticker
-  generated_by: temu-rules-upstream
-- name: icagenda
-  category: Other
-  confidence: 0.55
-  body:
-  - com_icagenda
-  generated_by: temu-rules-upstream
-- name: chamilo
-  category: Other
-  confidence: 0.55
-  body:
-  - <meta\ name="generator"\ content="chamilo
-  generated_by: temu-rules-upstream
-- name: protop
-  category: Other
-  confidence: 0.55
-  body:
-  - <title>protop
-  generated_by: temu-rules-upstream
-- name: dse855
-  category: Other
-  confidence: 0.55
-  body:
-  - deep\ sea\ electronics
-  generated_by: temu-rules-upstream
-- name: iis
-  category: Other
-  confidence: 0.55
-  body:
-  - server:\ microsoft\-iis
-  generated_by: temu-rules-upstream
-- name: office_web_apps_server
-  category: Other
-  confidence: 0.55
-  body:
-  - provide\ a\ link\ that\ opens\ word
-  generated_by: temu-rules-upstream
-- name: skype_for_business_server
-  category: Other
-  confidence: 0.55
-  body:
-  - skype\ for\ business
-  generated_by: temu-rules-upstream
-- name: windows_7
-  category: Other
-  confidence: 0.55
-  body:
-  - microsoft\-iis"\ "2015
-  generated_by: temu-rules-upstream
-- name: poststaticfooter
-  category: Other
-  confidence: 0.55
-  body:
-  - posstaticfooter
-  generated_by: temu-rules-upstream
-- name: lodash
-  category: Other
-  confidence: 0.55
-  body:
-  - lodash
-  generated_by: temu-rules-upstream
-- name: manageengine-servicedesk
-  category: Other
-  confidence: 0.55
-  body:
-  - ',''manageengine\ servicedesk\ plus'','
-  generated_by: temu-rules-upstream
-- name: jenkins
-  category: Other
-  confidence: 0.55
-  body:
-  - 'x\-jenkins\-session:'
-  - 'x\-jenkins:'
-  - jenkins\-agent\-protocols
-  generated_by: temu-rules-upstream
-- name: git
-  category: Other
-  confidence: 0.55
-  body:
-  - x\-jenkins
-  generated_by: temu-rules-upstream
-- name: operational_decision_manager
-  category: Other
-  confidence: 0.55
-  body:
-  - ibm\ odm
-  generated_by: temu-rules-upstream
-- name: websphere
-  category: Other
-  confidence: 0.55
-  body:
-  - ibm\ websphere\ portal
-  - com\.ibm\.websphere\.ihs\.doc
-  - content="websphere\ application\ server
-  - websphere
-  generated_by: temu-rules-upstream
-- name: tivoli_common_reporting
-  category: Other
-  confidence: 0.55
-  body:
-  - ibm\ websphere\ portal
-  generated_by: temu-rules-upstream
-- name: integrated_management_module
-  category: Other
-  confidence: 0.55
-  body:
-  - ibmdojo
-  - integrated\ management\ module
-  generated_by: temu-rules-upstream
-- name: langflow
-  category: Other
-  confidence: 0.55
-  body:
-  - langflow
-  generated_by: temu-rules-upstream
-- name: remote_support
-  category: Other
-  confidence: 0.55
-  body:
-  - beyondtrust
-  generated_by: temu-rules-upstream
-- name: beyondtrust
-  category: Other
-  confidence: 0.55
-  body:
-  - beyondtrust
-  generated_by: temu-rules-upstream
-- name: everest-forms-pro
-  category: Other
-  confidence: 0.55
-  body:
-  - /wp\-content/plugins/everest\-forms\-pro/
-  generated_by: temu-rules-upstream
-- name: site_management
-  category: Other
-  confidence: 0.55
-  body:
-  - /bitrix/
-  generated_by: temu-rules-upstream
-- name: ninja_forms_file_uploads
-  category: Other
-  confidence: 0.55
-  body:
-  - nfpluginsettings\.js\?ver=
-  generated_by: temu-rules-upstream
-- name: f3x36
-  category: Other
-  confidence: 0.55
-  body:
-  - four\-faith
-  generated_by: temu-rules-upstream
-- name: gitlab-mcp
-  category: Other
-  confidence: 0.55
-  body:
-  - transport:sse
-  generated_by: temu-rules-upstream
-- name: memberglut
-  category: Other
-  confidence: 0.55
-  body:
-  - wp\-content/plugins/memberglut
+  - blogengine\.net
   generated_by: temu-rules-upstream
 - name: netsweeper
   category: Other
@@ -3159,48 +3395,185 @@
   - netsweepersmbtextatbottomofloginscreen
   - set\-cookie:\ webadmin=
   generated_by: temu-rules-upstream
-- name: episerver
+- name: vicidial
   category: Other
   confidence: 0.55
   body:
-  - /javascript/episerverscriptmanager\.js
-  - content="episerver
+  - url=/vicidial/welcome\.php
   generated_by: temu-rules-upstream
-- name: nexis
+- name: arelle
   category: Other
   confidence: 0.55
   body:
-  - avid\ nexis
+  - arelle\ web\ services
   generated_by: temu-rules-upstream
-- name: modoboa
+- name: asustor-data-master
   category: Other
   confidence: 0.55
   body:
-  - modoboa
+  - asustor
   generated_by: temu-rules-upstream
-- name: cherokee
+- name: appcms
   category: Other
   confidence: 0.55
   body:
-  - server:\ cherokee
+  - powerd\ by\ appcms
   generated_by: temu-rules-upstream
-- name: phpcms-2008
+- name: the-grid
   category: Other
   confidence: 0.55
   body:
-  - powered\ by\ phpcms
+  - /wp\-content/plugins/the\-grid/
   generated_by: temu-rules-upstream
-- name: phpcms
+- name: pm43_firmware
   category: Other
   confidence: 0.55
   body:
-  - <a\ href="http://www\.phpcms\.cn"\ target="_blank">phpcms</a>
+  - /main/login\.lua\?pageid=
   generated_by: temu-rules-upstream
-- name: basic_pdu_firmware
+- name: livezilla
   category: Other
   confidence: 0.55
   body:
-  - powertek
+  - content="livezilla
+  - href="http://www\.livezilla\.net"\ target="_blank
+  - livezilla\ is\ a\ registered\ trademark\ of\ livezilla\ gmbh</div>
+  - thank\ you\ for\ using\ livezilla!
+  generated_by: temu-rules-upstream
+- name: zentao
+  category: Other
+  confidence: 0.55
+  body:
+  - zentao
+  generated_by: temu-rules-upstream
+- name: perses
+  category: Other
+  confidence: 0.55
+  body:
+  - perses\-dark\-theme\-enabled
+  generated_by: temu-rules-upstream
+- name: loadmaster
+  category: Other
+  confidence: 0.55
+  body:
+  - kemp\ login\ screen
+  generated_by: temu-rules-upstream
+- name: learnpress
+  category: Other
+  confidence: 0.55
+  body:
+  - /wp\-content/plugins/learnpress
+  generated_by: temu-rules-upstream
+- name: wp-hotel-booking
+  category: Other
+  confidence: 0.55
+  body:
+  - /wp\-content/plugins/wp\-hotel\-booking/
+  generated_by: temu-rules-upstream
+- name: netman_204_firmware
+  category: Other
+  confidence: 0.55
+  body:
+  - ups\ network\ management\ card\ 4
+  generated_by: temu-rules-upstream
+- name: roundcube
+  category: Other
+  confidence: 0.55
+  body:
+  - roundcube_sessid
+  generated_by: temu-rules-upstream
+- name: roundcube-webmail
+  category: Other
+  confidence: 0.55
+  body:
+  - <title>roundcube
+  generated_by: temu-rules-upstream
+- name: teampass
+  category: Other
+  confidence: 0.55
+  body:
+  - teampass
+  generated_by: temu-rules-upstream
+- name: real-estate-listing-realtyna-wpl
+  category: Other
+  confidence: 0.55
+  body:
+  - real\-estate\-listing\-realtyna\-wpl
+  generated_by: temu-rules-upstream
+- name: vbulletin
+  category: Other
+  confidence: 0.55
+  body:
+  - <!\-\-\ do\ not\ remove\ this\ copyright\ notice\ \-\->powered\ by\ <\ a\ href="https://www\.vbulletin\.com"\
+    id="vbulletinlink">
+  - content="vbulletin
+  - powered\ by\ vbulletin\&trade;
+  generated_by: temu-rules-upstream
+- name: wp_go_maps
+  category: Other
+  confidence: 0.55
+  body:
+  - /wp\-content/plugins/wp\-google\-maps
+  generated_by: temu-rules-upstream
+- name: caucho-resin
+  category: Other
+  confidence: 0.55
+  body:
+  - server:\ resin
+  generated_by: temu-rules-upstream
+- name: vendure
+  category: Other
+  confidence: 0.55
+  body:
+  - vendure
+  generated_by: temu-rules-upstream
+- name: next.js
+  category: Other
+  confidence: 0.55
+  body:
+  - /_next/static
+  generated_by: temu-rules-upstream
+- name: opencode
+  category: Other
+  confidence: 0.55
+  body:
+  - opencode
+  generated_by: temu-rules-upstream
+- name: zoneminder
+  category: Other
+  confidence: 0.55
+  body:
+  - zoneminder\ login
+  generated_by: temu-rules-upstream
+- name: wpvivid-backuprestore
+  category: Other
+  confidence: 0.55
+  body:
+  - wp\-content/plugins/wpvivid\-backuprestore
+  generated_by: temu-rules-upstream
+- name: emby
+  category: Other
+  confidence: 0.55
+  body:
+  - content="emby\ server"
+  generated_by: temu-rules-upstream
+- name: geo-my-wp
+  category: Other
+  confidence: 0.55
+  body:
+  - /wp\-content/plugins/geo\-my\-wp/
+  generated_by: temu-rules-upstream
+- name: relevanssi
+  category: Other
+  confidence: 0.55
+  body:
+  - /wp\-content/plugins/relevanssi/
+  generated_by: temu-rules-upstream
+- name: vpn
+  category: Other
+  confidence: 0.55
+  body:
+  - <li>manage\ this\ vpn\ server\ or\ vpn\ bridge<ul>
   generated_by: temu-rules-upstream
 - name: masteriyo
   category: Other
@@ -3214,392 +3587,132 @@
   body:
   - /plugins/themegrill\-demo\-importer
   generated_by: temu-rules-upstream
-- name: b2evolution
+- name: dgraph
   category: Other
   confidence: 0.55
   body:
-  - /powered\-by\-b2evolution\-150t\.gif
-  - content="b2evolution
-  - powered\ by\ b2evolution
+  - dgraph
   generated_by: temu-rules-upstream
-- name: opentsdb
+- name: phpvms
   category: Other
   confidence: 0.55
   body:
-  - opentsdb
+  - phpvms
   generated_by: temu-rules-upstream
-- name: wp_fast_total_search
+- name: dotclear
   category: Other
   confidence: 0.55
   body:
-  - wp\-content/plugins/fulltext\-search
+  - powered\ by\ <a\ href="http://dotclear\.org/
   generated_by: temu-rules-upstream
-- name: iplanet_web_server
+- name: listserv
   category: Other
   confidence: 0.55
   body:
-  - oracle\-iplanet\-web\-server
+  - listserv
   generated_by: temu-rules-upstream
-- name: fusion_middleware
+- name: smanga
   category: Other
   confidence: 0.55
   body:
-  - weblogic\ application\ server
+  - we're\ sorry\ but\ smanga
   generated_by: temu-rules-upstream
-- name: access_manager
+- name: postiz
   category: Other
   confidence: 0.55
   body:
-  - /oam/pages/css/login_page\.css
+  - postiz\ register
   generated_by: temu-rules-upstream
-- name: retail_xstore_office
+- name: debian
   category: Other
   confidence: 0.55
   body:
-  - xstoremgwt
+  - <h1>welcome\ to\ nginx\ on\ debian!</h1>
   generated_by: temu-rules-upstream
-- name: nvt_web_server
+- name: whodb
   category: Other
   confidence: 0.55
   body:
-  - /viewer/viewer\.html
+  - whodb
   generated_by: temu-rules-upstream
-- name: camaleon_cms
+- name: sonlogger
   category: Other
   confidence: 0.55
   body:
-  - camaleon_cms
+  - sonlogger
   generated_by: temu-rules-upstream
-- name: sap_web_application_server
+- name: etl3100
   category: Other
   confidence: 0.55
   body:
-  - sap\ business\ server\ pages\ team
+  - etl3100
   generated_by: temu-rules-upstream
-- name: netweaver_development_infrastructure
+- name: websphere
   category: Other
   confidence: 0.55
   body:
-  - sap\ netweaver
+  - ibm\ websphere\ portal
+  - com\.ibm\.websphere\.ihs\.doc
+  - content="websphere\ application\ server
+  - websphere
   generated_by: temu-rules-upstream
-- name: laravel
+- name: operational_decision_manager
   category: Other
   confidence: 0.55
   body:
-  - laravel\-framework
+  - ibm\ odm
   generated_by: temu-rules-upstream
-- name: wpcom-member
+- name: tivoli_common_reporting
   category: Other
   confidence: 0.55
   body:
-  - wpcom\-member
+  - ibm\ websphere\ portal
   generated_by: temu-rules-upstream
-- name: serv-u
+- name: langflow
   category: Other
   confidence: 0.55
   body:
-  - serv\-u
+  - langflow
   generated_by: temu-rules-upstream
-- name: magnusbilling
+- name: integrated_management_module
   category: Other
   confidence: 0.55
   body:
-  - magnusbilling
+  - ibmdojo
+  - integrated\ management\ module
   generated_by: temu-rules-upstream
-- name: webp_server_go
+- name: manageengine_desktop_central
   category: Other
   confidence: 0.55
   body:
-  - webp
+  - manageengine\ desktop\ central\ 10
   generated_by: temu-rules-upstream
-- name: lighttpd
+- name: manageengine_netflow_analyzer
   category: Other
   confidence: 0.55
   body:
-  - <title>powered\ by\ lighttpd</title>
-  - server:\ lighttpd
+  - login\ \-\ netflow\ analyzer
   generated_by: temu-rules-upstream
-- name: academy_learning_management_system
+- name: wpmobile.app
   category: Other
   confidence: 0.55
   body:
-  - study\ any\ topic,\ anytime
+  - /wp\-content/plugins/wpappninja
   generated_by: temu-rules-upstream
-- name: academy_lms
+- name: wordpress
   category: Other
   confidence: 0.55
   body:
-  - academy\ lms
+  - /wp\-content/themes/
+  - /wp\-content/uploads/
+  - /wp\-includes/
+  - <link\ rel='stylesheet'\ id='wp\-block\-library\-css
   generated_by: temu-rules-upstream
-- name: icinga
+- name: f3x36
   category: Other
   confidence: 0.55
   body:
-  - <title>icinga\ web\ 2\ login</title>
-  - mask\-icon"\ href="/icingaweb2/img/website\-icon\.svg"\ color=
-  generated_by: temu-rules-upstream
-- name: candidats
-  category: Other
-  confidence: 0.55
-  body:
-  - candidats
-  generated_by: temu-rules-upstream
-- name: geo-my-wp
-  category: Other
-  confidence: 0.55
-  body:
-  - /wp\-content/plugins/geo\-my\-wp/
-  generated_by: temu-rules-upstream
-- name: gotenberg
-  category: Other
-  confidence: 0.55
-  body:
-  - gotenberg
-  generated_by: temu-rules-upstream
-- name: roxy-wi
-  category: Other
-  confidence: 0.55
-  body:
-  - roxy\-wi
-  generated_by: temu-rules-upstream
-- name: visualcomposer
-  category: Other
-  confidence: 0.55
-  body:
-  - /wp\-content/plugins/visualcomposer/
-  generated_by: temu-rules-upstream
-- name: avantfax
-  category: Other
-  confidence: 0.55
-  body:
-  - src="images/avantfax\-big\.png"\ border="0"\ alt="avantfax
-  generated_by: temu-rules-upstream
-- name: lightrag
-  category: Other
-  confidence: 0.55
-  body:
-  - lightrag
-  generated_by: temu-rules-upstream
-- name: alfresco-content-services
-  category: Other
-  confidence: 0.55
-  body:
-  - /share/res/js/alfresco
-  generated_by: temu-rules-upstream
-- name: spamtitan
-  category: Other
-  confidence: 0.55
-  body:
-  - <table\ class="lhead"><tr><td\ class="img"><img\ src="/imgs/logo\.gif"\ alt="spamtitan\
-    logo"></td></tr></table></div>
-  generated_by: temu-rules-upstream
-- name: mcp-atlassian
-  category: Other
-  confidence: 0.55
-  body:
-  - atlassian\ mcp
-  generated_by: temu-rules-upstream
-- name: framework
-  category: Other
-  confidence: 0.55
-  body:
-  - __nuxt
-  - buildassetsdir
-  - buildassetsdir"\ "nuxt
-  generated_by: temu-rules-upstream
-- name: metinfo
-  category: Other
-  confidence: 0.55
-  body:
-  - <div\ class="powered_by_metinfo"></div>
-  - <meta\ name="generator"\ content="metinfo
-  generated_by: temu-rules-upstream
-- name: phpshe
-  category: Other
-  confidence: 0.55
-  body:
-  - content="phpshe
-  - powered\ by\ phpshe
-  generated_by: temu-rules-upstream
-- name: changedetection.io
-  category: Other
-  confidence: 0.55
-  body:
-  - changedetection\.io
-  generated_by: temu-rules-upstream
-- name: crywolf
-  category: Other
-  confidence: 0.55
-  body:
-  - false\ alarm\ reduction\ website
-  generated_by: temu-rules-upstream
-- name: php-login-system
-  category: Other
-  confidence: 0.55
-  body:
-  - klik_loginsystem
-  generated_by: temu-rules-upstream
-- name: hg532e
-  category: Other
-  confidence: 0.55
-  body:
-  - hg532e
-  generated_by: temu-rules-upstream
-- name: hg255s
-  category: Other
-  confidence: 0.55
-  body:
-  - hg532e
-  generated_by: temu-rules-upstream
-- name: pgadmin4
-  category: Other
-  confidence: 0.55
-  body:
-  - pgadmin4
-  generated_by: temu-rules-upstream
-- name: ticket_support_script
-  category: Other
-  confidence: 0.55
-  body:
-  - phpjabbers
-  generated_by: temu-rules-upstream
-- name: make_an_offer_widget
-  category: Other
-  confidence: 0.55
-  body:
-  - phpjabbers
-  generated_by: temu-rules-upstream
-- name: shuttle_booking_software
-  category: Other
-  confidence: 0.55
-  body:
-  - php\ jabbers\.com
-  generated_by: temu-rules-upstream
-- name: food_delivery_script
-  category: Other
-  confidence: 0.55
-  body:
-  - phpjabbers
-  generated_by: temu-rules-upstream
-- name: callback_widget
-  category: Other
-  confidence: 0.55
-  body:
-  - phpjabbers
-  generated_by: temu-rules-upstream
-- name: taxi_booking_script
-  category: Other
-  confidence: 0.55
-  body:
-  - php\ jabbers\.com
-  generated_by: temu-rules-upstream
-- name: yacht_listing_script
-  category: Other
-  confidence: 0.55
-  body:
-  - phpjabbers
-  generated_by: temu-rules-upstream
-- name: fundraising_script
-  category: Other
-  confidence: 0.55
-  body:
-  - phpjabbers
-  generated_by: temu-rules-upstream
-- name: boa
-  category: Other
-  confidence: 0.55
-  body:
-  - server:\ boa/0\.94\.13
-  generated_by: temu-rules-upstream
-- name: flagr
-  category: Other
-  confidence: 0.55
-  body:
-  - flagr
-  generated_by: temu-rules-upstream
-- name: moodle
-  category: Other
-  confidence: 0.55
-  body:
-  - content="moodle
-  - 'm\.str\ =\ \{"moodle":'
-  - title="moodle"\ href="http://moodle\.org/
-  generated_by: temu-rules-upstream
-- name: masterstudy-lms
-  category: Other
-  confidence: 0.55
-  body:
-  - /wp\-content/plugins/masterstudy\-lms\-learning\-management\-system/
-  - masterstudy\-lms\-learning\-management\-system
-  generated_by: temu-rules-upstream
-- name: gitea
-  category: Other
-  confidence: 0.55
-  body:
-  - gitea
-  generated_by: temu-rules-upstream
-- name: wpforms
-  category: Other
-  confidence: 0.55
-  body:
-  - wpforms\-uploader
-  generated_by: temu-rules-upstream
-- name: linear_emerge_e3_access_control_firmware
-  category: Other
-  confidence: 0.55
-  body:
-  - linear\ emerge
-  generated_by: temu-rules-upstream
-- name: gotenberg
-  category: Other
-  confidence: 0.55
-  body:
-  - gotenberg
-  generated_by: temu-rules-upstream
-- name: saisies
-  category: Other
-  confidence: 0.55
-  body:
-  - spip
-  generated_by: temu-rules-upstream
-- name: spip
-  category: Other
-  confidence: 0.55
-  body:
-  - spip\.php\?page=backend
-  generated_by: temu-rules-upstream
-- name: neo4j
-  category: Other
-  confidence: 0.55
-  body:
-  - content="neo4j
-  - ng\-show="neo4j\.enterpriseedition
-  - play\-topic="neo4j\-sync
-  - \{\{\ neo4j\.version\ \|\ neo4jdeveloperdoc\ \}\}/
-  generated_by: temu-rules-upstream
-- name: multiple_shipping_addresses_for_woocommerce
-  category: Other
-  confidence: 0.55
-  body:
-  - wp\-content/plugins/multiple\-shipping\-address\-woocommerce
-  generated_by: temu-rules-upstream
-- name: larecipe
-  category: Other
-  confidence: 0.55
-  body:
-  - /binarytorch/larecipe/
-  generated_by: temu-rules-upstream
-- name: astrbot
-  category: Other
-  confidence: 0.55
-  body:
-  - <title>astrbot
-  generated_by: temu-rules-upstream
-- name: journyx
-  category: Other
-  confidence: 0.55
-  body:
-  - journyx
+  - four\-faith
   generated_by: temu-rules-upstream
 - name: ufida-nc
   category: Other
@@ -3610,130 +3723,28 @@
   - logo/images/
   - ufida
   generated_by: temu-rules-upstream
-- name: d-link
+- name: pfblockerng
   category: Other
   confidence: 0.55
   body:
-  - d\-link\ systems,\ inc
+  - pfblockerng
   generated_by: temu-rules-upstream
-- name: zimaos
+- name: pfsense
   category: Other
   confidence: 0.55
   body:
-  - zimaos
+  - <h4>login\ to\ pfsense</h4>
+  - rubicon\ communications,\ llc\ \(netgate\)
   generated_by: temu-rules-upstream
-- name: phpbb
+- name: atutor
   category: Other
   confidence: 0.55
   body:
-  - phpbb
-  - phpbb\ group"\ />
-  - http://www\.longluntan\.com/zh/phpbb/
-  - start\ quick\ hack\ \-\ phpbb\ statistics\ mod
+  - atutor
   generated_by: temu-rules-upstream
-- name: atlassian-jira
+- name: wpcom-member
   category: Other
   confidence: 0.55
   body:
-  - ams\-build\-number
-  - com\.atlassian\.jira
-  - jira\.webresources
-  - location:\ /secure/setupmode!default\.jspa
-  generated_by: temu-rules-upstream
-- name: bitrix24
-  category: Other
-  confidence: 0.55
-  body:
-  - /bitrix/
-  generated_by: temu-rules-upstream
-- name: bitrix_site_manager
-  category: Other
-  confidence: 0.55
-  body:
-  - /bitrix/
-  generated_by: temu-rules-upstream
-- name: wago
-  category: Other
-  confidence: 0.55
-  body:
-  - wago\ ethernet\ web\-based\ management
-  generated_by: temu-rules-upstream
-- name: compact_controller_100_firmware
-  category: Other
-  confidence: 0.55
-  body:
-  - /wbm/"\ html:"wago
-  generated_by: temu-rules-upstream
-- name: arelle
-  category: Other
-  confidence: 0.55
-  body:
-  - arelle\ web\ services
-  generated_by: temu-rules-upstream
-- name: r-seenet
-  category: Other
-  confidence: 0.55
-  body:
-  - r\-seenet
-  generated_by: temu-rules-upstream
-- name: centreon
-  category: Other
-  confidence: 0.55
-  body:
-  - generator"\ content="centreon\ \-\ copyright
-  generated_by: temu-rules-upstream
-- name: strapi
-  category: Other
-  confidence: 0.55
-  body:
-  - welcome\ to\ your\ strapi\ app
-  generated_by: temu-rules-upstream
-- name: manageengine_netflow_analyzer
-  category: Other
-  confidence: 0.55
-  body:
-  - login\ \-\ netflow\ analyzer
-  generated_by: temu-rules-upstream
-- name: manageengine_desktop_central
-  category: Other
-  confidence: 0.55
-  body:
-  - manageengine\ desktop\ central\ 10
-  generated_by: temu-rules-upstream
-- name: opencode
-  category: Other
-  confidence: 0.55
-  body:
-  - opencode
-  generated_by: temu-rules-upstream
-- name: wegia
-  category: Other
-  confidence: 0.55
-  body:
-  - wegia
-  generated_by: temu-rules-upstream
-- name: jai-ext
-  category: Other
-  confidence: 0.55
-  body:
-  - /geoserver/
-  generated_by: temu-rules-upstream
-- name: rocket-lms
-  category: Other
-  confidence: 0.55
-  body:
-  - rocket\ lms
-  generated_by: temu-rules-upstream
-- name: jellyfin
-  category: Other
-  confidence: 0.55
-  body:
-  - <title>jellyfin</title>
-  - content="jellyfin"
-  generated_by: temu-rules-upstream
-- name: hospital_management_system
-  category: Other
-  confidence: 0.55
-  body:
-  - hospital\ management\ system
+  - wpcom\-member
   generated_by: temu-rules-upstream
